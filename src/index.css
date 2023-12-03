@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100vw;
+}
+
+body {
+  width: 100%;
+  background-image: url("./assets/images/BKG_Flat_modernArchitectureWave.jpg");
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+h1 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: var(--white-color);
+  padding: 5px 0px 0px;
+  font-style: normal;
+  font-weight: 400;
+  font-style: bold;
+}
+
+h2 {
+  font-family: "Montserrat", Futura, Helvetica, Arial, sans-serif;
+  text-align: center;
+  color: var(--white-color);
+}
+
+h3 {
+  font-family: "Montserrat", Futura, Helvetica, Arial, sans-serif;
+  color: var(--black-color);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+h4 {
+  font-family: "Montserrat", Futura, Helvetica, Arial, sans-serif;
+  color: var(--white-color);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  list-style-type: none;
+}
+
+li {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+button {
+  margin: 0px 0px;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+  background: #00515100 ;
+  border: 0;
+  border-radius: 0;
+  width: 100%;
+  padding: 5px 15px;
+}
+
+button:hover {
+  background: #96969628;
+}
+
+/* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ ROOT ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
+:root {
+  --background: #242424;
+  --black-color: rgb(32, 32, 32);
+  --white-color: rgb(233, 233, 233);
+
+  --border: 10px;
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+

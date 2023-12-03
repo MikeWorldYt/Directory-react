@@ -1,0 +1,42 @@
+#head, #explorer {
+    margin: 0 10px;
+    display: flex;
+}
+
+container {
+    width: 100%;
+    margin: 0rem 5px 10px;
+    padding: 5px 0px;
+    border-radius: var(--border);
+    background: linear-gradient(135deg, rgba(150, 150, 150, 0.274), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    box-sizing: border-box ;
+    position: relative;
+    overflow: hidden;
+}
+
+.col-h {
+    background: rgb(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    padding: 2px 15px;
+}
+
+/* Testing class */
+.green {
+    background: rgba(0, 128, 0, 0.301);
+}
+
+.red {
+    background: rgba(226, 0, 0, 0.301);
+}
+
+.blue {
+    background: rgba(0, 13, 128, 0.301);
+}
+
+/* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ ROOT ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
