@@ -17,6 +17,10 @@ container {
     overflow: hidden;
 }
 
+.level {
+    max-width: 25%;
+}
+
 .col-h {
     background: rgb(0, 0, 0, 0.2);
     position: absolute;
