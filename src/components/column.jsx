@@ -18,7 +18,7 @@ export default function Container(props) {
           <ul>
             {data.map((item, index) => (
               <li key={index}>
-                <button>
+                <button className={item.class} id={item.id} level={`${props.id}`}>
                   {item.label}
                 </button>
               </li>
