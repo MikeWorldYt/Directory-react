@@ -1,15 +1,11 @@
-import './styles/Components.css'
-import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+import './styles/Components.css';
+import levelsData from './data';
 
-function Container(props) {
-  const levelsData = {
-    level1: ['Tienda Roja', 'Tienda Azul', 'Tienda Verde'],
-    level2: ['pinta la', 'segunda columna'],
-    level3: ['pinta la', 'tercera columna'],
-  //  level4: ['pinta la', 'cuarta columna'],
-  };
 
-  const data = levelsData[`level${props.id}`] || [];
+export default function Container(props) {
+  const allData = 'alldata' // modificar para pintar
+  const data = levelsData[allData] || []; // modificar para pintar aparte
   const hasData = data.length > 0;
 
   return (
@@ -23,7 +19,7 @@ function Container(props) {
             {data.map((item, index) => (
               <li key={index}>
                 <button>
-                  {item}
+                  {item.label}
                 </button>
               </li>
             ))}
@@ -34,4 +30,6 @@ function Container(props) {
   );
 }
 
-export default Container
+Container.propTypes = {
+  id: PropTypes.string.isRequired,
+};

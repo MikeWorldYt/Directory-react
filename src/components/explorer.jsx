@@ -1,7 +1,7 @@
 import Column from './column'
 import './styles/Components.css'
 
-function Explorer() {
+export default function Explorer() {
   return (
     <section id='explorer'>
       <Column id='1'/>
@@ -12,4 +12,3 @@ function Explorer() {
   )
 }
 
-export default Explorer
