@@ -4,15 +4,15 @@ const levelsData = {
     { id: '100' , level: 1, label: 'Personal'},
 
     { id: '200' , level: 1, label: 'Work' },
-   //   { id: '210' , level: 1, label: 'Photography' },
-   //   { id: '220' , level: 1, label: 'Frontend' },
+   // !  { id: '210' , level: 1, label: 'Photography' },
+   // !  { id: '220' , level: 1, label: 'Frontend' },
 
     { id: '300' , level: 1, label: 'Projects' },
 
     { id: '400' , level: 1, label: 'College'},
       { id: '410' , level: 2, label: '(lvl 2) Lenguage'},
-    //  { id: '420' , level: 2, label: '(lvl 2) ForeignLenguage'},
-    //  { id: '430' , level: 2, label: '(lvl 2) Math'},
+    // ! { id: '420' , level: 2, label: '(lvl 2) ForeignLenguage'},
+    // ! { id: '430' , level: 2, label: '(lvl 2) Math'},
 
     { id: '500' , level: 1, label: 'Hobbies'},
       { id: '510' , level: 2, label: '(lvl 2) Games'}, 
