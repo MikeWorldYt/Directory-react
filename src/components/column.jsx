@@ -8,9 +8,9 @@ export default function Container(props) {
   const hasData = data.length > 0;
   const filter1 = Number(`${props.id}`) + 1
 
-  const handleClick = () => {
-      console.log(`click ${filter1} `);
-      console.log('array')
+  const handleClick = (dataLevel) => {
+      console.log(`click `);
+      console.log({dataLevel})
     };
 
   return (
@@ -23,7 +23,7 @@ export default function Container(props) {
           <ul>
             {data.map((item, index) => (
               <li key={index}>
-                <button onClick={handleClick} id={item.id} data-level={item.level}>
+                <button onClick={() => handleClick(item.data)} id={item.id} data-level={item.level}>
                   {item.label}
                 </button>
               </li>
