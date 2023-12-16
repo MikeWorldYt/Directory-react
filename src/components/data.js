@@ -1,11 +1,15 @@
 // data.js
 const levelsData = {
   alldata: [
-    { id: '100' , level: 1, label: 'Personal'},
+    { id: '100' , level: 1, label: 'Personal', data: [
+      
+    ] },
 
-    { id: '200' , level: 1, label: 'Work' },
-   // !  { id: '210' , level: 1, label: 'Photography' },
-   // !  { id: '220' , level: 1, label: 'Frontend' },
+    { id: '200' , level: 1, label: 'Work', data: [
+      { id: '210' , level: 2, label: 'Photography' },
+      { id: '220' , level: 2, label: 'Frontend' },
+    ] },
+
 
     { id: '300' , level: 1, label: 'Projects' },
 
