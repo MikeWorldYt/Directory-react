@@ -38,16 +38,13 @@ export default function Container(props) {
                   onClick={() => handleClick(item.data)}
                   id={item.id}
                   data-level={item.level}
-                  
-                  >
-                  <input 
+                  ><input 
                   name={props.id}
                   type="radio"
                   className={selectedItem === item ? 'checked' : ''}
-                  
-                  onChange={() => handleRadioChange(item)}
-                  >
-                  </input>{item.label}
+                  checked={selectedItem === item}
+                  onChange={() => {handleClick(item)}}
+                  ></input>{item.label}
                 </label>
               </li>
             ))}
