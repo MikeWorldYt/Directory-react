@@ -23,9 +23,9 @@ export default function Container(props) {
           <ul>
             {data.map((item, index) => (
               <li key={index}>
-                <button onClick={() => handleClick(item.data)} id={item.id} data-level={item.level}>
-                  {item.label}
-                </button>
+                <label onClick={() => handleClick(item.data)} id={item.id} data-level={item.level}>
+                  <input name={props.id} type="radio"></input>{item.label}
+                </label>
               </li>
             ))}
           </ul>
