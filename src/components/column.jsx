@@ -40,7 +40,7 @@ export default function Container(props) {
           </ul>
         </container>
       )}
-      <Column2 id='1' level={newLevel}/>
+      <Column2 id='1' level={valNewLevel.current}/>
     </>
   );
 }
