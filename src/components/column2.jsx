@@ -1,20 +1,16 @@
 import PropTypes from 'prop-types';
 import './styles/Components.css';
 import levelsData from './data';
-import { useState } from 'react';
-
 export default function Container2(props) {
   const allData = 'alldata' // TODO:             modificar para pintar
   const data =  levelsData.alldata[3].data || []; // TODO:    modificar para pintar aparte
   const hasData = data.length > 0;
-  const filter1 = Number(`${props.id}`) + 1;
-  const [selectedItem, setSelectedItem] = useState(null);
+  const newColumn = Number(`${props.id}`) + 1;
+
 
 const handleClick = (dataLevel) => {
       console.log(`click `);
       ///console.log({dataLevel})
-      setSelectedItem(dataLevel);
-      
     };
 
     /*function LevelBuilder(v1, v2){
