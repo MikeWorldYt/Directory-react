@@ -10,24 +10,20 @@ const levelsData = {
       { id: '220' , level: 2, label: 'Frontend' },
     ] },
 
+    { id: '300' , level: 1, label: 'Projects' , data: [
 
-    { id: '300' , level: 1, label: 'Projects' },
+    ] },
 
-    { id: '400' , level: 1, label: 'College'},
-      { id: '410' , level: 2, label: '(lvl 2) Lenguage'},
-    // ! { id: '420' , level: 2, label: '(lvl 2) ForeignLenguage'},
-    // ! { id: '430' , level: 2, label: '(lvl 2) Math'},
+    { id: '400' , level: 1, label: 'College', data: [
+      { id: '410' , level: 2, label: 'Lenguage'},
+      { id: '420' , level: 2, label: 'ForeignLenguage'},
+      { id: '430' , level: 2, label: 'Math'},
+    ] },
 
-    { id: '500' , level: 1, label: 'Hobbies'},
+    { id: '500' , level: 1, label: 'Hobbies', data: [
       { id: '510' , level: 2, label: '(lvl 2) Games'}, 
-  ],
-
-    Testing: [
-      { label: 'element 1' },
-      { label: 'element 2' },
-      { label: 'element 3' },
-      { label: 'element 4' }
-    ],
+    ] }
+  ]
 };
   
 export default levelsData;
