@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import './styles/Components.css';
 import levelsData from './data';
-import { useRef } from 'react';
+import { useState } from 'react';
 
 import Column2 from './column2'
 
@@ -10,14 +10,14 @@ export default function Container(props) {
   const data = levelsData[allData] || []; // TODO:    modificar para pintar aparte
   const hasData = data.length > 0;
   const newColumn = Number(props.id) + 1;
-  let valNewLevel = useRef(0)
-  let newLevel = valNewLevel.current + 1
+  const [level, setLevel] = useState(null);
 
   const handleClick = (dataID, dataLVL) => {
       console.log(`--------- click ---------`);
       console.log(Number(dataLVL) + 1)
-      console.log({dataID})
-      valNewLevel.current = valNewLevel.current + 1
+      let value = Number(dataLVL) + 1
+      // console.log({dataID})
+      setLevel(value)
     };
 
   return (
@@ -40,7 +40,7 @@ export default function Container(props) {
           </ul>
         </container>
       )}
-      <Column2 id='1' level={valNewLevel.current}/>
+      <Column2 id='1' level={level}/>
     </>
   );
 }
