@@ -3,16 +3,14 @@ import './styles/Components.css';
 import levelsData from './data';
 import { useState } from 'react';
 
-import Column2 from './column2'
 
-export default function Container(props) {
-  const allData = 'alldata' // TODO:             modificar para pintar
-  const data = levelsData[allData] || []; // TODO:    modificar para pintar aparte
+export default function Container2(props) {
+  const data =  levelsData.alldata[props.id].data || []; 
   const hasData = data.length > 0;
   const [level, setLevel] = useState(null);
   const [id, setId] = useState(0);
 
-  const handleClick = (dataID, dataLVL) => {
+const handleClick = (dataID, dataLVL) => {
       console.log(`--------- click ---------`);
       let value = Number(dataLVL) + 1
       let getID = dataID
@@ -24,9 +22,9 @@ export default function Container(props) {
   return (
     <>
       {hasData && (
-        <container className='level' id={`level${props.id}`}>
+        <container className='level' id={`level${props.level}`}>
           <div className='col-h'>
-            <h4> Level {props.id}</h4>
+            <h4> Level {props.level}</h4>
           </div>
           <ul>
             {data.map((item, index) => (
@@ -41,11 +39,12 @@ export default function Container(props) {
           </ul>
         </container>
       )}
-      <Column2 id={id} level={level}/>
+
     </>
   );
 }
 
-Container.propTypes = {
+Container2.propTypes = {
   id: PropTypes.string.isRequired,
+  level: PropTypes.string.isRequired
 };

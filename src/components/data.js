@@ -6,7 +6,9 @@ const levelsData = {
     ] },
 
     { id: '200' , level: 1, label: 'Work', data: [
-      { id: '210' , level: 2, label: 'Photography' },
+      { id: '210' , level: 2, label: 'Photography', data:[
+        { id: '211' , level: 3, label: 'Travel Photography' },
+      ] },
       { id: '220' , level: 2, label: 'Frontend' },
     ] },
 
@@ -43,8 +45,8 @@ click en `Rojos`
 
 `<li id: '110' , level: '2' ><Rojos> </></>`
 FILTRO 1 = 
-- toma el valor de la propiedad id =  `2` 
-- entonces `2++` y devuelve  `level3`
+✅ toma el valor de la propiedad id =  `2` 
+✅ entonces `2++` y devuelve  `level3`
   (levelsData[allData] || []).filter((obj) => obj.id === "200")
 
 FILTRO 2= cual es el id del click? `110` = 
