@@ -12,13 +12,19 @@ export default function Container(props) {
   const [level, setLevel] = useState(null);
   const [id, setId] = useState(0);
 
-  const handleClick = (dataID, dataLVL) => {
-      console.log(`--------- click ---------`);
+  const handleClick = (dataID, dataLVL, dataLAB) => {
       let value = Number(dataLVL) + 1
       let getID = dataID
-      console.log(Number(getID[0])-1)
       setId(Number(getID[0])-1)
       setLevel(value)
+
+      console.log(`--------- click ---------
+      LABEL: ${dataLAB}
+      ID: ${getID}
+      New level: ${value}
+      `);
+      
+      console.log(Number(getID[0])-1)
     };
 
   return (
@@ -31,7 +37,7 @@ export default function Container(props) {
           <ul>
             {data.map((item, index) => (
               <li key={index}>
-                <button onClick={() => handleClick(item.id, item.level)}
+                <button onClick={() => handleClick(item.id, item.level, item.label)}
                   id={item.id}
                   data-level={item.level}
                   >{item.label}
