@@ -3,41 +3,33 @@ import './styles/Components.css';
 import levelsData from './data';
 import { useState } from 'react';
 
-import Column2 from './column2'
 
-export default function Container(props) {
-  const allData = 'alldata' // TODO:             modificar para pintar
-  const data = levelsData[allData] || []; // TODO:    modificar para pintar aparte
+export default function Container2(props) {
+  const data =  levelsData.alldata[1].data[0].data || []; 
   const hasData = data.length > 0;
   const [level, setLevel] = useState(null);
   const [id, setId] = useState(0);
 
-  const handleClick = (dataID, dataLVL, dataLAB) => {
+const handleClick = (dataID, dataLVL) => {
+      console.log(`--------- click ---------`);
       let value = Number(dataLVL) + 1
       let getID = dataID
+      console.log(Number(getID[0])-1)
       setId(Number(getID[0])-1)
       setLevel(value)
-
-      console.log(`--------- click ---------
-      LABEL: ${dataLAB}
-      ID: ${getID}
-      New level: ${value}
-      `);
-      
-      console.log(Number(getID[0])-1)
     };
 
   return (
     <>
       {hasData && (
-        <container className='level' id={`level${props.id}`}>
+        <container className='level' id={`level${props.level}`}>
           <div className='col-h'>
-            <h4> Level {props.id}</h4>
+            <h4> Level {props.level}</h4>
           </div>
           <ul>
             {data.map((item, index) => (
               <li key={index}>
-                <button onClick={() => handleClick(item.id, item.level, item.label)}
+                <button onClick={() => handleClick(item.id, item.level)}
                   id={item.id}
                   data-level={item.level}
                   >{item.label}
@@ -47,11 +39,12 @@ export default function Container(props) {
           </ul>
         </container>
       )}
-      <Column2 id={id} level={level}/>
+
     </>
   );
 }
 
-Container.propTypes = {
+Container2.propTypes = {
   id: PropTypes.string.isRequired,
+  level: PropTypes.string.isRequired
 };
