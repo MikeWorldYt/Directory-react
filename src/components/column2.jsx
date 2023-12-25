@@ -3,35 +3,37 @@ import './styles/Components.css';
 import levelsData from './data';
 import { useState } from 'react';
 
-import Column3 from './column3'
+/// import Column3 from './column3'
 
 export default function Container2(props) {
-  const data =  levelsData.alldata[props.id].data || []; 
+  const data =  props.lastCol !== undefined ? (levelsData.alldata[props.lastCol]?.data || []) : [];
   const hasData = data.length > 0;
-  const [level, setLevel] = useState(null);
-  const [id, setId] = useState(0);
+  const colA = props.lastCol
+  const [selectioned, setSelectioned] = useState(undefined);
+  const [colC, setColC] = useState(null);
 
 const handleClick = (dataID, dataLVL, dataLAB) => {
-      let value = Number(dataLVL) + 1
       let getID = dataID
-      setId(Number(getID[1]))
-      setLevel(value)
+      let newLVL = Number(dataLVL) + 1
+      
+      setSelectioned(Number(getID[1])-1)
+      setColC(newLVL)
 
       console.log(`--------- click ---------
       LABEL: ${dataLAB}
       ID: ${getID}
-      New level: ${value}
+      New level: ${newLVL}
       `);
       
-      console.log(Number(getID[1]))
+      console.log(Number(getID[1])-1)
     };
 
   return (
     <>
       {hasData && (
-        <container className='level' id={`level${props.level}`}>
+        <container className='level' id={`level${props.colB}`}>
           <div className='col-h'>
-            <h4> Level {props.level}</h4>
+            <h4> Level {props.colB}</h4>
           </div>
           <ul>
             {data.map((item, index) => (
@@ -45,13 +47,13 @@ const handleClick = (dataID, dataLVL, dataLAB) => {
             ))}
           </ul>
         </container>
-      )}
-      <Column3 id={id} level={level}/>
+      )} 
+      {/*<Column3 colA={colA} lastCol={selectioned} level={colC} />*/}
     </>
   );
 }
 
 Container2.propTypes = {
-  id: PropTypes.string.isRequired,
-  level: PropTypes.string.isRequired
+  lastCol: PropTypes.string.isRequired,
+  colB: PropTypes.string.isRequired
 };

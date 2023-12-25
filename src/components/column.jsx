@@ -6,22 +6,23 @@ import { useState } from 'react';
 import Column2 from './column2'
 
 export default function Container(props) {
-  const allData = 'alldata' // TODO:             modificar para pintar
-  const data = levelsData[allData] || []; // TODO:    modificar para pintar aparte
+  const allData = 'alldata'
+  const data = levelsData[allData] || [];
   const hasData = data.length > 0;
-  const [level, setLevel] = useState(null);
-  const [id, setId] = useState(0);
+  const [selectioned, setSelectioned] = useState(undefined);
+  const [colB, setColB] = useState(null);
 
   const handleClick = (dataID, dataLVL, dataLAB) => {
-      let value = Number(dataLVL) + 1
       let getID = dataID
-      setId(Number(getID[0])-1)
-      setLevel(value)
+      let newLVL = Number(dataLVL) + 1
+      
+      setSelectioned(Number(getID[0])-1)
+      setColB(newLVL)
 
       console.log(`--------- click ---------
       LABEL: ${dataLAB}
       ID: ${getID}
-      New level: ${value}
+      New level: ${newLVL}
       `);
       
       console.log(Number(getID[0])-1)
@@ -30,9 +31,9 @@ export default function Container(props) {
   return (
     <>
       {hasData && (
-        <container className='level' id={`level${props.id}`}>
+        <container className='level' id={`level${props.colA}`}>
           <div className='col-h'>
-            <h4> Level {props.id}</h4>
+            <h4> Level {props.colA}</h4>
           </div>
           <ul>
             {data.map((item, index) => (
@@ -47,11 +48,11 @@ export default function Container(props) {
           </ul>
         </container>
       )}
-      <Column2 id={id} level={level}/>
+      <Column2 lastCol={selectioned} colB={colB}/>
     </>
   );
 }
 
 Container.propTypes = {
-  id: PropTypes.string.isRequired,
+  colA: PropTypes.string.isRequired
 };
