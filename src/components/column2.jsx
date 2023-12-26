@@ -14,8 +14,8 @@ export default function Container2(props) {
 
   useEffect(() => {
     setColB(props.colB)
-    setColC(undefined)
-  }, [])
+    setColC(props.colC)
+  }, [props.colA])
 
 const handleClick = (dataID, dataLVL, dataLAB) => {
       let getID = dataID
@@ -36,7 +36,7 @@ const handleClick = (dataID, dataLVL, dataLAB) => {
   return (
     <>
       {hasData && (
-        <container className='level' id={`level${props.colB}`}>
+        <div className='container level' id={`level${props.colB}`}>
           <div className='col-h'>
             <h4> Level {props.colB}</h4>
           </div>
@@ -55,7 +55,7 @@ const handleClick = (dataID, dataLVL, dataLAB) => {
           <h1>colA - 1: {colA}</h1>
           <h1>colB - 2: {colB}</h1>
           <h1>colC - 3: {colC}</h1>
-        </container>
+        </div>
       )} 
       <Column3 colA={colA} colB={colB} colC={colC} />
     </>
@@ -63,7 +63,7 @@ const handleClick = (dataID, dataLVL, dataLAB) => {
 }
 
 Container2.propTypes = {
-  colA: PropTypes.string.isRequired,
-  colB: PropTypes.string.isRequired,
-  colC: PropTypes.string.isRequired
+  colA: PropTypes.string,
+  colB: PropTypes.string,
+  colC: PropTypes.string
 };

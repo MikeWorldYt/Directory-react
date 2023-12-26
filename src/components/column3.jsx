@@ -5,10 +5,11 @@ import { useEffect, useState } from 'react';
 
 
 export default function Container3(props) {
-  const data = props.colC !== undefined ? ( levelsData.alldata[props.colA].data[props.colB].data || [] ) : [];
-  const hasData = data.length > 0;
   const [colA, setColA] = useState(props.colA)
   const [colB, setColB] = useState(props.colB);
+  const data = props.colC !== undefined ? ( levelsData.alldata[props.colA].data[props.colB].data || [] ) : [];
+  const hasData = data.length > 0;
+  
   // const [selectioned, setSelectioned] = useState(undefined);
   // const [colD, setColD] = useState(null);
 
@@ -36,7 +37,7 @@ const handleClick = (dataID, dataLVL, dataLAB) => {
   return (
     <>
       {hasData && (
-        <container className='level' id={`level${props.colC}`}>
+        <div className='container level' id={`level${props.colC}`}>
           <div className='col-h'>
             <h4> Level {props.colC}</h4>
           </div>
@@ -51,7 +52,7 @@ const handleClick = (dataID, dataLVL, dataLAB) => {
               </li>
             ))}
           </ul>
-        </container>
+        </div>
       )}
 
     </>
@@ -59,7 +60,7 @@ const handleClick = (dataID, dataLVL, dataLAB) => {
 }
 
 Container3.propTypes = {
-  colA: PropTypes.string.isRequired,
-  colB: PropTypes.string.isRequired,
-  colC: PropTypes.string.isRequired
+  colA: PropTypes.string,
+  colB: PropTypes.string,
+  colC: PropTypes.string
 };

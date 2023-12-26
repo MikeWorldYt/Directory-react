@@ -33,7 +33,7 @@ export default function Container(props) {
   return (
     <>
       {hasData && (
-        <container className='level' id={`level${props.colA}`}>
+        <div className='container level' id={`level${props.colA}`}>
           <div className='col-h'>
             <h4> Level {props.colA}</h4>
           </div>
@@ -52,7 +52,7 @@ export default function Container(props) {
           <h1>colA - 1: {colA}</h1>
           <h1>colB - 2: {colB}</h1>
           <h1>colC - 3: {colC}</h1>
-        </container>
+        </div>
       )}
       <Column2 colA={colA} colB={colB} colC={colC}/>
     </>
@@ -60,5 +60,5 @@ export default function Container(props) {
 }
 
 Container.propTypes = {
-  colA: PropTypes.string.isRequired
+  colA: PropTypes.string
 };

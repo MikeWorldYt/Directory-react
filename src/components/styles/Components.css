@@ -3,7 +3,7 @@
     display: flex;
 }
 
-container {
+.container {
     width: 100%;
     margin: 0rem 5px 10px;
     padding: 5px 0px;
