@@ -11,8 +11,6 @@ export default function Container3(props) {
   const [colD, setColD] = useState(undefined);
   const data = colC !== undefined ? ( levelsData.alldata[colA].data[colB].data || [] ) : [];
   const hasData = data.length > 0;
-  
-  // const [selectioned, setSelectioned] = useState(undefined);
 
   useEffect(() => {
     setColA(props.colA)
