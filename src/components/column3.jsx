@@ -26,7 +26,7 @@ const handleClick = (dataID, dataLVL, dataLAB) => {
       
       setColC(Number(getID[2])-1)
       setColD(newLVL)
-
+    
       console.log(`--------- click ---------
       LABEL: ${dataLAB}
       ID: ${getID}
