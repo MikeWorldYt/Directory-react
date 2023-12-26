@@ -3,7 +3,7 @@ import './styles/Components.css';
 import levelsData from './data';
 import { useEffect, useState } from 'react';
 
-
+import Column4 from './column4'
 export default function Container3(props) {
   const [colA, setColA] = useState(props.colA);
   const [colB, setColB] = useState(props.colB);
@@ -52,9 +52,13 @@ const handleClick = (dataID, dataLVL, dataLAB) => {
               </li>
             ))}
           </ul>
+          <h1>DEBUG DATA:</h1>
+          <h1>colA - 1: {colA}</h1>
+          <h1>colB - 2: {colB}</h1>
+          <h1>colC - 3: {colC}</h1>
         </div>
       )}
-
+      
     </>
   );
 }
