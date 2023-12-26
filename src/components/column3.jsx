@@ -8,24 +8,24 @@ export default function Container3(props) {
   const [colA, setColA] = useState(props.colA);
   const [colB, setColB] = useState(props.colB);
   const [colC, setColC] = useState(props.colC);
+  const [colD, setColD] = useState(undefined);
   const data = colC !== undefined ? ( levelsData.alldata[colA].data[colB].data || [] ) : [];
   const hasData = data.length > 0;
   
   // const [selectioned, setSelectioned] = useState(undefined);
-  // const [colD, setColD] = useState(null);
 
   useEffect(() => {
-    console.log('active')
     setColA(props.colA)
     setColB(props.colB)
     setColC(props.colC)
+    setColD(undefined)
   }, [props.colB])
 const handleClick = (dataID, dataLVL, dataLAB) => {
       let getID = dataID
       let newLVL = Number(dataLVL) + 1
       
-      //setSelectioned(Number(getID[1])-1)
-      //setColD(newLVL)
+      setColC(Number(getID[2])-1)
+      setColD(newLVL)
 
       console.log(`--------- click ---------
       LABEL: ${dataLAB}
