@@ -9,7 +9,10 @@ const levelsData = {
       { id: '210' , level: 2, label: 'Photography', data:[
         { id: '211' , level: 3, label: 'Travel Photography' },
       ] },
-      { id: '220' , level: 2, label: 'Frontend' },
+      { id: '220' , level: 2, label: 'Frontend', data:[
+        { id: '221' , level: 3, label: 'React (Testing)' },
+      ]
+    },
     ] },
 
     { id: '300' , level: 1, label: 'Projects' , data: [

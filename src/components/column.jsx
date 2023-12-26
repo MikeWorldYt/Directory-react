@@ -9,15 +9,17 @@ export default function Container(props) {
   const allData = 'alldata'
   const data = levelsData[allData] || [];
   const hasData = data.length > 0;
-  const [selectioned, setSelectioned] = useState(undefined);
-  const [colB, setColB] = useState(null);
+  const [colA, setColA] = useState(undefined);
+  const [colB, setColB] = useState(undefined);
+  const [colC, setColC] = useState(undefined);
 
   const handleClick = (dataID, dataLVL, dataLAB) => {
       let getID = dataID
       let newLVL = Number(dataLVL) + 1
       
-      setSelectioned(Number(getID[0])-1)
+      setColA(Number(getID[0])-1)
       setColB(newLVL)
+      setColC(undefined)
 
       console.log(`--------- click ---------
       LABEL: ${dataLAB}
@@ -46,9 +48,13 @@ export default function Container(props) {
               </li>
             ))}
           </ul>
+          <h1>DEBUG DATA:</h1>
+          <h1>colA - 1: {colA}</h1>
+          <h1>colB - 2: {colB}</h1>
+          <h1>colC - 3: {colC}</h1>
         </container>
       )}
-      <Column2 lastCol={selectioned} colB={colB}/>
+      <Column2 colA={colA} colB={colB} colC={colC}/>
     </>
   );
 }
