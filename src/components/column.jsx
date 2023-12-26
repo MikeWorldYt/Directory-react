@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import './styles/Components.css';
 import levelsData from './data';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 import Column2 from './column2'
 
@@ -11,7 +11,7 @@ export default function Container(props) {
   const hasData = data.length > 0;
   const [colA, setColA] = useState(undefined);
   const [colB, setColB] = useState(undefined);
-  const [colC, setColC] = useState(undefined);
+  const colC = undefined;
 
   const handleClick = (dataID, dataLVL, dataLAB) => {
       let getID = dataID
@@ -19,7 +19,6 @@ export default function Container(props) {
       
       setColA(Number(getID[0])-1)
       setColB(newLVL)
-      setColC(undefined)
     
       console.log(`--------- click ---------
       LABEL: ${dataLAB}
