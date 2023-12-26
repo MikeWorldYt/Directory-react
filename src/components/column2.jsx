@@ -23,7 +23,7 @@ const handleClick = (dataID, dataLVL, dataLAB) => {
       
       setColB(Number(getID[1])-1)
       setColC(newLVL)
-
+    
       console.log(`--------- click ---------
       LABEL: ${dataLAB}
       ID: ${getID}
@@ -36,9 +36,9 @@ const handleClick = (dataID, dataLVL, dataLAB) => {
   return (
     <>
       {hasData && (
-        <div className='container level' id={`level${props.colB}`}>
+        <div className='container level' id={`level2`}>
           <div className='col-h'>
-            <h4> Level {props.colB}</h4>
+            <h4> Level 2</h4>
           </div>
           <ul>
             {data.map((item, index) => (

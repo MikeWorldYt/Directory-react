@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import './styles/Components.css';
 import levelsData from './data';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import Column2 from './column2'
 
@@ -20,7 +20,7 @@ export default function Container(props) {
       setColA(Number(getID[0])-1)
       setColB(newLVL)
       setColC(undefined)
-
+    
       console.log(`--------- click ---------
       LABEL: ${dataLAB}
       ID: ${getID}
