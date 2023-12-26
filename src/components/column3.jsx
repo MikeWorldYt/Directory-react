@@ -5,9 +5,10 @@ import { useEffect, useState } from 'react';
 
 
 export default function Container3(props) {
-  const [colA, setColA] = useState(props.colA)
+  const [colA, setColA] = useState(props.colA);
   const [colB, setColB] = useState(props.colB);
-  const data = props.colC !== undefined ? ( levelsData.alldata[props.colA].data[props.colB].data || [] ) : [];
+  const [colC, setColC] = useState(props.colC);
+  const data = colC !== undefined ? ( levelsData.alldata[colA].data[colB].data || [] ) : [];
   const hasData = data.length > 0;
   
   // const [selectioned, setSelectioned] = useState(undefined);
@@ -17,7 +18,8 @@ export default function Container3(props) {
     console.log('active')
     setColA(props.colA)
     setColB(props.colB)
-  }, [props.colA])
+    setColC(props.colC)
+  }, [props.colB])
 const handleClick = (dataID, dataLVL, dataLAB) => {
       let getID = dataID
       let newLVL = Number(dataLVL) + 1

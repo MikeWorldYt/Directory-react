@@ -14,7 +14,7 @@ export default function Container2(props) {
 
   useEffect(() => {
     setColB(props.colB)
-    setColC(props.colC)
+    setColC(undefined)
   }, [props.colA])
 
 const handleClick = (dataID, dataLVL, dataLAB) => {
