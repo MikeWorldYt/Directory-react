@@ -7,6 +7,7 @@ export default function Container3(props) {
   const [colB, setColB] = useState(props.colB);
   const [colC, setColC] = useState(props.colC);
   const [colD, setColD] = useState(undefined);
+  const [active, setActive] = useState( {} );
   const data = colC !== undefined ? ( levelsData.alldata[colA].data[colB].data || [] ) : [];
   const hasData = data.length > 0;
 
@@ -15,6 +16,7 @@ export default function Container3(props) {
     setColB(props.colB)
     setColC(props.colC)
     setColD(undefined)
+    setActive( {} );
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [props.colB])
 const handleClick = (dataID, dataLVL, dataLAB) => {
@@ -22,6 +24,7 @@ const handleClick = (dataID, dataLVL, dataLAB) => {
       let newLVL = Number(dataLVL) + 1
       setColC(Number(getID[2])-1)
       setColD(newLVL)
+      setActive( { [dataLAB]: true } );
     
       console.log(`--------- click ---------
       LABEL: ${dataLAB}
@@ -39,7 +42,7 @@ const handleClick = (dataID, dataLVL, dataLAB) => {
           <ul>
             {data.map((item, index) => (
               <li key={index}>
-                <button 
+                <button className={`${ active[item.label] ? 'active' : '' }`}
                   onClick={() => handleClick(item.id, item.level, item.label)}
                   id={item.id}
                   data-level={item.level}
