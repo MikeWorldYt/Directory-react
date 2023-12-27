@@ -6,14 +6,15 @@ export default function Container4(props) {
   const [colA, setColA] = useState(props.colA);
   const [colB, setColB] = useState(props.colB);
   const [colC, setColC] = useState(props.colC);
-  const colD = props.colD;
-  const data = colD !== undefined ? ( levelsData.alldata[colA].data[colB].data[0].data || [] ) : []; // testing data
+  const [colD, setColD] = useState(props.colD);
+  const data = colD !== undefined ? ( levelsData.alldata[colA].data[colB].data[colC].data || [] ) : []; // testing data
   const hasData = data.length > 0;
 
   useEffect(() => {
     setColA(props.colA)
     setColB(props.colB)
     setColC(props.colC)
+    setColD(props.colD)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [props.colC])
 
