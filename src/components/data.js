@@ -10,6 +10,9 @@ const levelsData = {
         { id: '211' , level: 3, label: 'Travel Photography', data:[
           { id: '211_01' , level: 4, label: 'Japan (testing)'},
         ] },
+        { id: '212' , level: 3, label: 'Nature Photography', data: [
+          { id: '212_01' , level: 4, label: 'Taiwan'},
+        ] },
       ] },
       { id: '220' , level: 2, label: 'Frontend', data:[
         { id: '221' , level: 3, label: 'React (Testing)' },

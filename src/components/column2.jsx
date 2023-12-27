@@ -13,6 +13,7 @@ export default function Container2(props) {
   useEffect(() => {
     setColB(props.colB)
     setColC(undefined)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [props.colA])
 
 const handleClick = (dataID, dataLVL, dataLAB) => {
