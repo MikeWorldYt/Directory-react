@@ -1,19 +1,12 @@
 import { useEffect, useState } from 'react';
 import './styles/Components.css'
 
-function Path( ) {
-  const [level1, setLevel1] = useState('');
+export default function Path( { text }  ) {
 
-  useEffect(() => {
-    const storedLevel1 = localStorage.getItem('level1');
-    setLevel1(storedLevel1 || '');
-  }, []);
 
   return (
     <>
-      <h3 className='path'>Root/ {level1}</h3>
+      <h3 className='path'>Root/{text}</h3>
     </>
   )
 }
-
-export default Path

@@ -1,11 +1,16 @@
 import './App.css'
+import Head from './components/head.jsx'
+import Explorer from './components/explorer.jsx'
+import './index.css'
+import { useState } from 'react'
 
-function App() {
+export default function App() {
+  const [text, setText] = useState('')
   return (
     <>
-      <h1>Testing App</h1>
+      <h1 >File Management by MikeWorldYt</h1>
+      <Head text={text}/>
+      <Explorer setText={setText}/>
     </>
   )
 }
-
-export default App

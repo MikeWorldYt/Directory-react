@@ -1,14 +1,12 @@
 import './styles/Components.css'
 import Path from './path'
 
-function Head() {
+export default function Head( { text } ) {
   return (
     <section id='head'>
       <div className='container'>
-        <Path />
+        <Path text={text}/>
       </div>
     </section>
   )
 }
-
-export default Head

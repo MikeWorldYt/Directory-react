@@ -10,7 +10,7 @@ export default function Container(props) {
   const [colB, setColB] = useState(undefined);
   const colC = undefined;
   const [active, setActive] = useState( {} );
-  const [currentLabel, setCurrentLabel] = useState(localStorage.getItem('level1') ||undefined);
+  const setText = props.setText;
   const allData = 'alldata'
   const data = levelsData[allData] || [];
   const hasData = data.length > 0;
@@ -21,8 +21,7 @@ export default function Container(props) {
       setColA(Number(getID[0])-1)
       setColB(newLVL)
       setActive( { [dataLAB]: true } );
-      setCurrentLabel(dataLAB);
-      localStorage.setItem('level1', dataLAB);
+      setText(dataLAB);
     
       console.log(`--------- click ---------
       LABEL: ${dataLAB}
@@ -56,11 +55,11 @@ export default function Container(props) {
         </div>
       )}
       <Column2 colA={colA} colB={colB} colC={colC}/>
-
     </>
   );
 }
 
 Container.propTypes = {
-  colA: PropTypes.string
+  colA: PropTypes.string,
+  setText: PropTypes.func
 };
