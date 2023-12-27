@@ -1,8 +1,6 @@
 import PropTypes from 'prop-types';
-import './styles/Components.css';
 import levelsData from './data';
 import { useEffect, useState } from 'react';
-
 import Column3 from './column3'
 
 export default function Container2(props) {
@@ -20,17 +18,13 @@ export default function Container2(props) {
 const handleClick = (dataID, dataLVL, dataLAB) => {
       let getID = dataID
       let newLVL = Number(dataLVL) + 1
-      
       setColB(Number(getID[1])-1)
       setColC(newLVL)
     
       console.log(`--------- click ---------
       LABEL: ${dataLAB}
       ID: ${getID}
-      New level: ${newLVL}
-      `);
-      
-      console.log(Number(getID[1])-1)
+      New level: ${newLVL} `);
     };
 
   return (

@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import './styles/Components.css';
 import levelsData from './data';
 import { useEffect, useState } from 'react';
 
