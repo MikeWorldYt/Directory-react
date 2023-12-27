@@ -29,9 +29,9 @@ export default function Container4(props) {
   return (
     <>
       {hasData && (
-        <div className='container level' > {/* id={`level${props.colC}`} */}
+        <div className='container level' id={`level${props.colD}`}>
             <div className='col-h'>
-            <h4> Level 4 {/*{props.colC}*/}</h4>
+            <h4> Level ${colD} </h4>
           </div>
           <ul>
             {data.map((item, index) => (
