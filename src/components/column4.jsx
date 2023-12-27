@@ -4,7 +4,7 @@ import levelsData from './data';
 // import { useEffect, useState } from 'react';
 
 export default function Container4(props) {
-
+  const colA = props.colA
     const data = levelsData.alldata[1].data[0].data[0].data || [] ///colD !== undefined ? ( levelsData.alldata[1].data[0].data[0].data || [] ) : []; // testing data
     const hasData = data.length > 0;
 
