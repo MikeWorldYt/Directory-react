@@ -4,9 +4,9 @@ import Path from './path'
 function Head() {
   return (
     <section id='head'>
-      <container className='container'>
+      <div className='container'>
         <Path />
-      </container>
+      </div>
     </section>
   )
 }

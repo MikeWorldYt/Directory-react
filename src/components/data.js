@@ -2,14 +2,19 @@
 const levelsData = {
   alldata: [
     { id: '100' , level: 1, label: 'Personal', data: [
-      
+      { id: '110' , level: 2, label: 'Documentation' }
     ] },
 
     { id: '200' , level: 1, label: 'Work', data: [
       { id: '210' , level: 2, label: 'Photography', data:[
-        { id: '211' , level: 3, label: 'Travel Photography' },
+        { id: '211' , level: 3, label: 'Travel Photography', data:[
+          { id: '211_01' , level: 4, label: 'Japan (testing)'},
+        ] },
       ] },
-      { id: '220' , level: 2, label: 'Frontend' },
+      { id: '220' , level: 2, label: 'Frontend', data:[
+        { id: '221' , level: 3, label: 'React (Testing)' },
+      ]
+    },
     ] },
 
     { id: '300' , level: 1, label: 'Projects' , data: [
@@ -17,8 +22,14 @@ const levelsData = {
     ] },
 
     { id: '400' , level: 1, label: 'College', data: [
-      { id: '410' , level: 2, label: 'Lenguage'},
-      { id: '420' , level: 2, label: 'ForeignLenguage'},
+      { id: '410' , level: 2, label: 'Lenguage', data: [
+        {id: '411' , level: 3, label: 'Grammar'},
+      ] },
+      { id: '420' , level: 2, label: 'ForeignLenguage', data: [
+        {id: '421' , level: 3, label: 'Spanish', data: [
+          { id: '421_01' , level: 4, label: 'Gramatica'},
+        ] },
+      ] },
       { id: '430' , level: 2, label: 'Math'},
     ] },
 
