@@ -64,7 +64,7 @@ const handleClick = (dataID, dataLVL, dataLAB) => {
 }
 
 Container3.propTypes = {
-  colA: PropTypes.string,
-  colB: PropTypes.string,
-  colC: PropTypes.string
+  colA: PropTypes.number,
+  colB: PropTypes.number,
+  colC: PropTypes.number
 };

@@ -48,8 +48,8 @@ export default function Container4(props) {
 }
 
 Container4.propTypes = {
-  colA: PropTypes.string,
-  colB: PropTypes.string,
-  colC: PropTypes.string,
-  colD: PropTypes.string
+  colA: PropTypes.number,
+  colB: PropTypes.number,
+  colC: PropTypes.number,
+  colD: PropTypes.number
 };
