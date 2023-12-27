@@ -22,8 +22,14 @@ const levelsData = {
     ] },
 
     { id: '400' , level: 1, label: 'College', data: [
-      { id: '410' , level: 2, label: 'Lenguage'},
-      { id: '420' , level: 2, label: 'ForeignLenguage'},
+      { id: '410' , level: 2, label: 'Lenguage', data: [
+        {id: '411' , level: 3, label: 'Grammar'},
+      ] },
+      { id: '420' , level: 2, label: 'ForeignLenguage', data: [
+        {id: '421' , level: 3, label: 'Spanish', data: [
+          { id: '421_01' , level: 4, label: 'Gramatica'},
+        ] },
+      ] },
       { id: '430' , level: 2, label: 'Math'},
     ] },
 
