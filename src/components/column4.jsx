@@ -16,7 +16,15 @@ export default function Container4(props) {
     setColC(props.colC)
   }, [props.colC])
 
-
+  const handleClick = (dataID, dataLVL, dataLAB) => {
+    let getID = dataID
+    let newLVL = Number(dataLVL) + 1
+    
+    console.log(`--------- click ---------
+    LABEL: ${dataLAB}
+    ID: ${getID}
+    New level: ${newLVL} `);
+  };
   return (
     <>
       {hasData && (
