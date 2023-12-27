@@ -8,6 +8,7 @@ export default function Container(props) {
   const [colA, setColA] = useState(undefined);
   const [colB, setColB] = useState(undefined);
   const colC = undefined;
+  const [active, setActive] = useState( {} );
   const allData = 'alldata'
   const data = levelsData[allData] || [];
   const hasData = data.length > 0;
@@ -17,6 +18,7 @@ export default function Container(props) {
       let newLVL = Number(dataLVL) + 1
       setColA(Number(getID[0])-1)
       setColB(newLVL)
+      setActive( { [dataLAB]: true } );
     
       console.log(`--------- click ---------
       LABEL: ${dataLAB}
@@ -24,7 +26,7 @@ export default function Container(props) {
       New level: ${newLVL} `);
     };
 
-  return (
+  return ( 
     <>
       {hasData && (
         <div className='container level' id={`level${props.colA}`}>
@@ -34,7 +36,8 @@ export default function Container(props) {
           <ul>
             {data.map((item, index) => (
               <li key={index}>
-                <button onClick={() => handleClick(item.id, item.level, item.label)}
+                <button className={`${ active[item.label] ? 'active' : '' }`} 
+                  onClick={() => handleClick(item.id, item.level, item.label) }
                   id={item.id}
                   data-level={item.level}
                   >{item.label}
