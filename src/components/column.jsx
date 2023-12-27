@@ -4,11 +4,13 @@ import levelsData from './data';
 import { useState } from 'react';
 import Column2 from './column2'
 
+
 export default function Container(props) {
   const [colA, setColA] = useState(undefined);
   const [colB, setColB] = useState(undefined);
   const colC = undefined;
   const [active, setActive] = useState( {} );
+  // const [currentLabel, setCurrentLabel] = useState(undefined);
   const allData = 'alldata'
   const data = levelsData[allData] || [];
   const hasData = data.length > 0;
@@ -19,6 +21,7 @@ export default function Container(props) {
       setColA(Number(getID[0])-1)
       setColB(newLVL)
       setActive( { [dataLAB]: true } );
+      // setCurrentLabel(dataLAB);
     
       console.log(`--------- click ---------
       LABEL: ${dataLAB}
@@ -52,6 +55,7 @@ export default function Container(props) {
         </div>
       )}
       <Column2 colA={colA} colB={colB} colC={colC}/>
+
     </>
   );
 }
