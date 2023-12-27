@@ -14,6 +14,7 @@ export default function Container4(props) {
     setColA(props.colA)
     setColB(props.colB)
     setColC(props.colC)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [props.colC])
 
   const handleClick = (dataID, dataLVL, dataLAB) => {
