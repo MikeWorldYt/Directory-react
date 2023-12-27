@@ -82,11 +82,11 @@ button {
   padding: 5px 15px;
 }
 
-button:hover {
+li:hover {
   background: #96969628;
 }
 
-button:active, .active {
+ .active {
   background-image: linear-gradient(45deg, #23a6d510, #23d5ab80);
 
   animation: gradient 2s linear infinite;
