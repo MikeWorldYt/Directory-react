@@ -52,10 +52,10 @@ const handleClick = (dataID, dataLVL, dataLAB) => {
               </li>
             ))}
           </ul>
-          <h1>DEBUG DATA:</h1>
+          {/* <h1>DEBUG DATA:</h1>
           <h1>colA - 1: {colA}</h1>
           <h1>colB - 2: {colB}</h1>
-          <h1>colC - 3: {colC}</h1>
+          <h1>colC - 3: {colC}</h1> */}
         </div>
       )}
       <Column4 colA={colA} colB={colB} colC={colC} colD={colD} />

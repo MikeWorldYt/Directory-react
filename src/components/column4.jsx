@@ -36,11 +36,11 @@ export default function Container4(props) {
               </li>
             ))}
           </ul>
-          <h1>DEBUG DATA:</h1>
+          {/* <h1>DEBUG DATA:</h1>
           <h1>colA - 1: {colA}</h1>
           <h1>colB - 2: {colB}</h1>
           <h1>colC - 3: {colC}</h1>
-          <h1>colD - 4: {colD}</h1>
+          <h1>colD - 4: {colD}</h1> */}
         </div>
       )}
     </>
