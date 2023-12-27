@@ -58,7 +58,7 @@ const handleClick = (dataID, dataLVL, dataLAB) => {
           <h1>colC - 3: {colC}</h1>
         </div>
       )}
-      <Column4 /*colA={colA} colB={colB} colC={colC}*/ />
+      <Column4 /*colA={colA} colB={colB} colC={colC} colD={colD}*/ />
     </>
   );
 }
