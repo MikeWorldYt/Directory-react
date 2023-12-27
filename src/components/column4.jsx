@@ -5,14 +5,16 @@ import { useEffect, useState } from 'react';
 
 export default function Container4(props) {
   const [colA, setColA] = useState(props.colA);
-  const colB = undefined
-  const colC = undefined
-  const data = levelsData.alldata[1].data[0].data[0].data || [] ///colD !== undefined ? ( levelsData.alldata[colA].data[0].data[0].data || [] ) : []; // testing data
+  const [colB, setColB] = useState(props.colB);
+  const [colC, setColC] = useState(props.colC);
+  const colD = props.colD;
+  const data = colD !== undefined ? ( levelsData.alldata[colA].data[colB].data[0].data || [] ) : []; // testing data
   const hasData = data.length > 0;
 
   useEffect(() => {
     setColA(props.colA)
-
+    setColB(props.colB)
+    setColC(props.colC)
   }, [props.colC])
 
 
@@ -38,6 +40,7 @@ export default function Container4(props) {
           <h1>colA - 1: {colA}</h1>
           <h1>colB - 2: {colB}</h1>
           <h1>colC - 3: {colC}</h1>
+          <h1>colD - 4: {colD}</h1>
         </div>
       )}
     </>
