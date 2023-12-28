@@ -4,10 +4,6 @@ import { useContext, useEffect } from 'react'
 export default function Path( ) {
   const { pathA } = useContext( DirContext );
 
-  useEffect ( () => {
-    
-  }, [pathA])
-
   return (
     <>
       <h3 className='path'>Root:/{pathA}</h3>
