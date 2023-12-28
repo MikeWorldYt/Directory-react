@@ -1,14 +1,11 @@
-import PropTypes from 'prop-types';
 import './styles/Components.css'
+import { DirContext } from '../context/directory'
+export default function Path( ) {
+  
 
-export default function Path( { text } ) {
   return (
     <>
-      <h3 className='path'>Root/{text}</h3>
+      <h3 className='path'>Root/</h3>
     </>
   )
-}
-
-Path.propTypes = {
-  text: PropTypes.func
 }

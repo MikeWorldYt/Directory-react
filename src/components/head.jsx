@@ -1,17 +1,12 @@
-import PropTypes from 'prop-types';
 import './styles/Components.css'
 import Path from './path'
 
-export default function Head( { text } ) {
+export default function Head(  ) {
   return (
     <section id='head'>
       <div className='container'>
-        <Path text={text}/>
+        <Path />
       </div>
     </section>
   )
-}
-
-Head.propTypes = {
-  text: PropTypes.func
 }

@@ -5,12 +5,12 @@ export const DirContext = createContext()
 
 // crear provider
 export function DirProvider( { children }) {
-    const [text, setText] = useState('')
+    const [pathA, setPathA] = useState('PRUEBA PATH A')
 
     return (
         <DirContext.Provider value={{
-            text, 
-            setText
+            pathA, 
+            setPathA
         }}>
             {children}
         </DirContext.Provider>
