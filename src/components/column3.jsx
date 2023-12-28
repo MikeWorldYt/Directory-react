@@ -2,8 +2,8 @@ import PropTypes from 'prop-types';
 import levelsData from './data';
 import { useEffect, useState } from 'react';
 import Column4 from './column4'
-//import { DirContext } from '../context/directory'
-//import { useContext } from 'react'
+import { DirContext } from '../context/directory'
+import { useContext } from 'react'
 export default function Container3(props) {
   const [colA, setColA] = useState(props.colA);
   const [colB, setColB] = useState(props.colB);
@@ -12,7 +12,7 @@ export default function Container3(props) {
   const [active, setActive] = useState( {} );
   const data = colC !== undefined ? ( levelsData.alldata[colA].data[colB].data || [] ) : [];
   const hasData = data.length > 0;
-  //const { setPathC } = useContext( DirContext );
+  const { setPathC } = useContext( DirContext );
 
   useEffect(() => {
     setColA(props.colA)
@@ -20,6 +20,7 @@ export default function Container3(props) {
     setColC(props.colC)
     setColD(undefined)
     setActive( {} );
+    setPathC('');
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [props.colB])
 const handleClick = (dataID, dataLVL, dataLAB) => {
@@ -28,7 +29,7 @@ const handleClick = (dataID, dataLVL, dataLAB) => {
       setColC(Number(getID[2])-1)
       setColD(newLVL)
       setActive( { [dataLAB]: true } );
-      //setPathC(`${dataLAB}/`);
+      setPathC(`${dataLAB}/`);
     
       console.log(`--------- click ---------
       LABEL: ${dataLAB}

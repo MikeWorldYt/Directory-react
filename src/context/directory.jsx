@@ -6,8 +6,8 @@ export const DirContext = createContext()
 // crear provider
 export function DirProvider( { children }) {
     const [pathA, setPathA] = useState('')
-    const [pathB, setPathB] = useState('b')
-    const [pathC, setPathC] = useState('c')
+    const [pathB, setPathB] = useState('')
+    const [pathC, setPathC] = useState('')
 
     return (
         <DirContext.Provider value={{

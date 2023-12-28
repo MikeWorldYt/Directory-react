@@ -18,6 +18,7 @@ export default function Container2(props) {
     setColB(props.colB)
     setColC(undefined)
     setActive( {} );
+    setPathB('');
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [props.colA])
 
