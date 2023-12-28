@@ -2,6 +2,8 @@ import PropTypes from 'prop-types';
 import levelsData from './data';
 import { useEffect, useState } from 'react';
 import Column3 from './column3'
+import { DirContext } from '../context/directory'
+import { useContext } from 'react'
 
 export default function Container2(props) {
   const colA = props.colA
@@ -10,6 +12,7 @@ export default function Container2(props) {
   const [active, setActive] = useState( {} );
   const data =  colB !== undefined ? (levelsData.alldata[colA]?.data || []) : [];
   const hasData = data.length > 0;
+  const { setPathB } = useContext( DirContext );
 
   useEffect(() => {
     setColB(props.colB)
@@ -24,6 +27,7 @@ const handleClick = (dataID, dataLVL, dataLAB) => {
       setColB(Number(getID[1])-1)
       setColC(newLVL)
       setActive( { [dataLAB]: true } );
+      setPathB(`${dataLAB}/`);
     
       console.log(`--------- click ---------
       LABEL: ${dataLAB}
