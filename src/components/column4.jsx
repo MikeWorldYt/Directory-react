@@ -37,7 +37,8 @@ export default function Container4(props) {
           <ul>
             {data.map((item, index) => (
               <li key={index}>
-                <button onClick={() => handleClick(item.id, item.level, item.label)}
+                <button 
+                  onClick={() => handleClick(item.id, item.level, item.label)}
                   id={item.id}
                   data-level={item.level}
                   >{item.label}

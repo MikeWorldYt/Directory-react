@@ -1,7 +1,7 @@
 import './styles/Components.css'
 import Path from './path'
 
-function Head() {
+export default function Head(  ) {
   return (
     <section id='head'>
       <div className='container'>
@@ -10,5 +10,3 @@ function Head() {
     </section>
   )
 }
-
-export default Head

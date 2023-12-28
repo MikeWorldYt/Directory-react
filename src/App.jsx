@@ -1,11 +1,14 @@
 import './App.css'
+import Head from './components/head.jsx'
+import Explorer from './components/explorer.jsx'
+import './index.css'
 
-function App() {
+export default function App() {
   return (
     <>
-      <h1>Testing App</h1>
+      <h1 >File Management by MikeWorldYt</h1>
+      <Head />
+      <Explorer />
     </>
   )
 }
-
-export default App

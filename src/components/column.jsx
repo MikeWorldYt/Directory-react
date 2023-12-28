@@ -3,20 +3,26 @@ import './styles/Components.css';
 import levelsData from './data';
 import { useState } from 'react';
 import Column2 from './column2'
+import { DirContext } from '../context/directory'
+import { useContext } from 'react'
 
 export default function Container(props) {
   const [colA, setColA] = useState(undefined);
   const [colB, setColB] = useState(undefined);
   const colC = undefined;
+  const [active, setActive] = useState( {} );
   const allData = 'alldata'
   const data = levelsData[allData] || [];
   const hasData = data.length > 0;
+  const { setPathA } = useContext( DirContext );
 
   const handleClick = (dataID, dataLVL, dataLAB) => {
       let getID = dataID
       let newLVL = Number(dataLVL) + 1
       setColA(Number(getID[0])-1)
       setColB(newLVL)
+      setActive( { [dataLAB]: true } );
+      setPathA(`${dataLAB}/`);
     
       console.log(`--------- click ---------
       LABEL: ${dataLAB}
@@ -24,7 +30,7 @@ export default function Container(props) {
       New level: ${newLVL} `);
     };
 
-  return (
+  return ( 
     <>
       {hasData && (
         <div className='container level' id={`level${props.colA}`}>
@@ -34,7 +40,8 @@ export default function Container(props) {
           <ul>
             {data.map((item, index) => (
               <li key={index}>
-                <button onClick={() => handleClick(item.id, item.level, item.label)}
+                <button className={`${ active[item.label] ? 'active' : '' }`} 
+                  onClick={() => handleClick(item.id, item.level, item.label) }
                   id={item.id}
                   data-level={item.level}
                   >{item.label}
@@ -54,5 +61,6 @@ export default function Container(props) {
 }
 
 Container.propTypes = {
-  colA: PropTypes.string
+  colA: PropTypes.string,
+  setpathA: PropTypes.func
 };
