@@ -1,7 +1,7 @@
-import './styles/Components.css'
 import Path from './path'
+import './styles/Components.css'
 
-export default function Head(  ) {
+export default function Head() {
   return (
     <section id='head'>
       <div className='container'>

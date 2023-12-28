@@ -1,9 +1,7 @@
-import PropTypes from 'prop-types';
-import levelsData from './data';
-import { useEffect, useState } from 'react';
-import Column3 from './column3'
+import { useContext, useEffect, useState } from 'react';
 import { DirContext } from '../context/directory'
-import { useContext } from 'react'
+import levelsData from './data';
+import Column3 from './column3'
 
 export default function Container2(props) {
   const colA = props.colA
@@ -16,10 +14,9 @@ export default function Container2(props) {
 
   useEffect(() => {
     setColB(props.colB)
+    setPathB('');
     setColC(undefined)
     setActive( {} );
-    setPathB('');
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [props.colA])
 
 const handleClick = (dataID, dataLVL, dataLAB) => {
@@ -65,9 +62,3 @@ const handleClick = (dataID, dataLVL, dataLAB) => {
     </>
   );
 }
-
-Container2.propTypes = {
-  colA: PropTypes.number,
-  colB: PropTypes.number,
-  colC: PropTypes.number
-};

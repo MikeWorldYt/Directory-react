@@ -1,10 +1,7 @@
-import PropTypes from 'prop-types';
-import './styles/Components.css';
-import levelsData from './data';
-import { useState } from 'react';
-import Column2 from './column2'
+import { useContext, useState } from 'react'
 import { DirContext } from '../context/directory'
-import { useContext } from 'react'
+import levelsData from './data';
+import Column2 from './column2'
 
 export default function Container(props) {
   const [colA, setColA] = useState(undefined);
@@ -20,9 +17,9 @@ export default function Container(props) {
       let getID = dataID
       let newLVL = Number(dataLVL) + 1
       setColA(Number(getID[0])-1)
+      setPathA(`${dataLAB}/`);
       setColB(newLVL)
       setActive( { [dataLAB]: true } );
-      setPathA(`${dataLAB}/`);
     
       console.log(`--------- click ---------
       LABEL: ${dataLAB}
@@ -59,8 +56,3 @@ export default function Container(props) {
     </>
   );
 }
-
-Container.propTypes = {
-  colA: PropTypes.string,
-  setpathA: PropTypes.func
-};

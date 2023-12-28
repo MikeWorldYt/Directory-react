@@ -1,6 +1,6 @@
-import './styles/Components.css'
+import { useContext } from 'react'
 import { DirContext } from '../context/directory'
-import { useContext, useEffect } from 'react'
+import './styles/Components.css'
 export default function Path( ) {
   const { pathA, pathB, pathC } = useContext( DirContext );
 
