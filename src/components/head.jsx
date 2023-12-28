@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import './styles/Components.css'
 import Path from './path'
 
@@ -9,4 +10,8 @@ export default function Head( { text } ) {
       </div>
     </section>
   )
+}
+
+Head.propTypes = {
+  text: PropTypes.func
 }

@@ -10,7 +10,7 @@ export default function App() {
     <>
       <h1 >File Management by MikeWorldYt</h1>
       <Head text={text}/>
-      <Explorer setText={setText}/>
+      <Explorer setpathA={setText}/>
     </>
   )
 }

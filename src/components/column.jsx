@@ -10,7 +10,7 @@ export default function Container(props) {
   const [colB, setColB] = useState(undefined);
   const colC = undefined;
   const [active, setActive] = useState( {} );
-  const setText = props.setText;
+  const setText = props.setpathA;
   const allData = 'alldata'
   const data = levelsData[allData] || [];
   const hasData = data.length > 0;
@@ -61,5 +61,5 @@ export default function Container(props) {
 
 Container.propTypes = {
   colA: PropTypes.string,
-  setText: PropTypes.func
+  setpathA: PropTypes.func
 };
