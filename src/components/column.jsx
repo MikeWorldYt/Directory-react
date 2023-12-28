@@ -21,10 +21,9 @@ export default function Container(props) {
       setColB(newLVL)
       setActive( { [dataLAB]: true } );
     
-      console.log(`--------- click ---------
-      LABEL: ${dataLAB}
-      ID: ${getID}
-      New level: ${newLVL} `);
+      console.log(`
+      --------- click ---------
+      ID: ${getID}, LABEL: ${dataLAB} `);
     };
 
   return ( 

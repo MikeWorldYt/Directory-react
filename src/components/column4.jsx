@@ -20,10 +20,9 @@ export default function Container4(props) {
     let getID = dataID
     let newLVL = Number(dataLVL) + 1
     
-    console.log(`--------- click ---------
-    LABEL: ${dataLAB}
-    ID: ${getID}
-    New level: ${newLVL} `);
+    console.log(`
+    --------- click ---------
+    ID: ${getID}, LABEL: ${dataLAB} `);
   };
   return (
     <>
