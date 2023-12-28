@@ -1,16 +1,13 @@
-import './styles/Components.css'
+import { useContext } from 'react'
 import { DirContext } from '../context/directory'
-import { useContext, useEffect } from 'react'
+import './styles/Components.css'
 export default function Path( ) {
-  const { pathA } = useContext( DirContext );
-
-  useEffect ( () => {
-    
-  }, [pathA])
+  const { pathA, pathB, pathC } = useContext( DirContext );
 
   return (
     <>
-      <h3 className='path'>Root:/{pathA}</h3>
+      <h3 className='path'>Root:/{pathA}{pathB}{pathC}</h3>
+      <h3></h3>
     </>
   )
 }

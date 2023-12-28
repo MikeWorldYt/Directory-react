@@ -1,6 +1,5 @@
-import PropTypes from 'prop-types';
-import levelsData from './data';
 import { useEffect, useState } from 'react';
+import levelsData from './data';
 
 export default function Container4(props) {
   const [colA, setColA] = useState(props.colA);
@@ -15,17 +14,15 @@ export default function Container4(props) {
     setColB(props.colB)
     setColC(props.colC)
     setColD(props.colD)
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [props.colC])
 
   const handleClick = (dataID, dataLVL, dataLAB) => {
     let getID = dataID
     let newLVL = Number(dataLVL) + 1
     
-    console.log(`--------- click ---------
-    LABEL: ${dataLAB}
-    ID: ${getID}
-    New level: ${newLVL} `);
+    console.log(`
+    --------- click ---------
+    ID: ${getID}, LABEL: ${dataLAB} `);
   };
   return (
     <>
@@ -56,10 +53,3 @@ export default function Container4(props) {
     </>
   );
 }
-
-Container4.propTypes = {
-  colA: PropTypes.number,
-  colB: PropTypes.number,
-  colC: PropTypes.number,
-  colD: PropTypes.number
-};

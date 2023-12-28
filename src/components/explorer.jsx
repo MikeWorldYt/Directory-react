@@ -1,15 +1,10 @@
-import PropTypes from 'prop-types';
 import Column from './column'
 import './styles/Components.css'
 
-export default function Explorer(props) {
+export default function Explorer() {
   return (
     <section id='explorer'>
-      <Column colA='1' setpathA={props.setpathA}/>
+      <Column colA='1' />
     </section>
   )
-}
-
-Explorer.propTypes = {
-  setpathA: PropTypes.func
 }
