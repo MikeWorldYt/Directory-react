@@ -5,11 +5,11 @@ import './styles/Components.css'
 export default function Explorer(props) {
   return (
     <section id='explorer'>
-      <Column colA='1' setpathA={props.setpathA}/>
+      <Column colA='1' />
     </section>
   )
 }
 
 Explorer.propTypes = {
-  setpathA: PropTypes.func
+  colA : PropTypes.number
 }
