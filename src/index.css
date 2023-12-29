@@ -58,10 +58,10 @@ ul {
   flex-direction: column;
   gap: 2px;
   list-style-type: none;
+  margin: 10px 0px
 }
 
 li {
-  font-family: Arial, Helvetica, sans-serif;
   color: white;
 }
 
