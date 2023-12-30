@@ -3,7 +3,7 @@ import { DirContext } from '../context/directory'
 import levelsData from './data';
 import Column2 from './column2'
 
-export default function Container(props) {
+export default function Container( ) {
   const [colA, setColA] = useState(undefined);
   const [colB, setColB] = useState(undefined);
   const colC = undefined;
@@ -29,9 +29,9 @@ export default function Container(props) {
   return ( 
     <>
       {hasData && (
-        <div className='container level' id={`level${props.colA}`}>
+        <div className='container level' id={ `level 1` }>
           <div className='col-h'>
-            <h4> Level {props.colA}</h4>
+            <h4> Level 1 </h4>
           </div>
           <ul>
             {data.map((item, index) => (
@@ -51,7 +51,7 @@ export default function Container(props) {
           <h1>colC - 3: {colC}</h1> */}
         </div>
       )}
-      <Column2 colA={colA} colB={colB} colC={colC}/>
+      <Column2 pcolA={colA} pcolB={colB} pcolC={colC}/>
     </>
   );
 }
