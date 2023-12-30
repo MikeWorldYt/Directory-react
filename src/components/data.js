@@ -25,15 +25,23 @@ const levelsData = {
     ] },
 
     { id: '400' , level: 1, label: '400.Academic', data: [
-      { id: '410' , level: 2, label: 'Lenguage', data: [
+      { id: '410' , level: 2, label: '01.Lenguage', data: [
         {id: '411' , level: 3, label: 'Grammar'},
       ] },
-      { id: '420' , level: 2, label: 'ForeignLenguage', data: [
+
+      { id: '420' , level: 2, label: '02.ForeignLenguage', data: [
         {id: '421' , level: 3, label: 'Spanish', data: [
           { id: '421_01' , level: 4, label: 'Gramatica'},
         ] },
       ] },
-      { id: '430' , level: 2, label: 'Math'},
+      { id: '430' , level: 2, label: '03.Graphic Design'},
+      { id: '440' , level: 2, label: '04.Development', data: [
+        {id: '441' , level: 3, label: 'Frontend'},
+        {id: '442' , level: 3, label: 'Backend'},
+        {id: '443' , level: 3, label: 'Data Science'},
+        {id: '444' , level: 3, label: 'Machine Learning'},
+        {id: '445' , level: 3, label: 'Mobile Development'},
+      ]}
     ] },
 
     { id: '500' , level: 1, label: '500.Hobbies', data: [
