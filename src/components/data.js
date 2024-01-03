@@ -34,14 +34,24 @@ const levelsData = {
           { id: '421_01' , level: 4, label: 'Gramatica'},
         ] },
       ] },
-      { id: '430' , level: 2, label: '03.Graphic Design'},
+      { id: '430' , level: 2, label: '03.Graphic Design', data: [
+        { id : '431' , level: 3, label: '01.Foundations' },
+        { id : '433' , level: 3, label: '02.Concept' },
+        { id : '432' , level: 3, label: '03.Branding' },
+        { id : '434' , level: 3, label: '04.Graphic Editors' },
+        { id : '435' , level: 3, label: '05.User Experience' },
+        { id : '436' , level: 3, label: '06.Final Project' },
+        { id : '437' , level: 3, label: '90.Resources' },
+        { id : '438' , level: 3, label: '98.Review' },
+
+      ] },
       { id: '440' , level: 2, label: '04.Development', data: [
         {id: '441' , level: 3, label: 'Frontend'},
         {id: '442' , level: 3, label: 'Backend'},
         {id: '443' , level: 3, label: 'Data Science'},
         {id: '444' , level: 3, label: 'Machine Learning'},
         {id: '445' , level: 3, label: 'Mobile Development'},
-      ]}
+      ] }
     ] },
 
     { id: '500' , level: 1, label: '500.Hobbies', data: [
