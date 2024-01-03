@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/test-dec11-react/"
+  base: "https://github.com/mikeworldyt/Directory-react"
 })

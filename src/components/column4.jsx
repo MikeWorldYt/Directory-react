@@ -1,24 +1,23 @@
 import { useEffect, useState } from 'react';
 import levelsData from './data';
 
-export default function Container4(props) {
-  const [colA, setColA] = useState(props.colA);
-  const [colB, setColB] = useState(props.colB);
-  const [colC, setColC] = useState(props.colC);
-  const [colD, setColD] = useState(props.colD);
+export default function Container4( {pcolA, pcolB, pcolC, pcolD} ) {
+  const [colA, setColA] = useState( pcolA );
+  const [colB, setColB] = useState( pcolB );
+  const [colC, setColC] = useState( pcolC );
+  const [colD, setColD] = useState( pcolD );
   const data = colD !== undefined ? ( levelsData.alldata[colA].data[colB].data[colC].data || [] ) : []; // testing data
   const hasData = data.length > 0;
 
   useEffect(() => {
-    setColA(props.colA)
-    setColB(props.colB)
-    setColC(props.colC)
-    setColD(props.colD)
-  }, [props.colC])
+    setColA( pcolA )
+    setColB( pcolB )
+    setColC( pcolC )
+    setColD( pcolD )
+  }, [ pcolC ])
 
   const handleClick = (dataID, dataLVL, dataLAB) => {
     let getID = dataID
-    let newLVL = Number(dataLVL) + 1
     
     console.log(`
     --------- click ---------
@@ -27,9 +26,9 @@ export default function Container4(props) {
   return (
     <>
       {hasData && (
-        <div className='container level' id={`level${props.colD}`}>
+        <div className='container level' id={ `level${ pcolD }` }>
             <div className='col-h'>
-            <h4> Level ${colD} </h4>
+            <h4> Level { pcolD } </h4>
           </div>
           <ul>
             {data.map((item, index) => (

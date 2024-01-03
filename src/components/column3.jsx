@@ -2,10 +2,10 @@ import { useContext, useEffect, useState } from 'react';
 import { DirContext } from '../context/directory'
 import levelsData from './data';
 import Column4 from './column4'
-export default function Container3(props) {
-  const [colA, setColA] = useState(props.colA);
-  const [colB, setColB] = useState(props.colB);
-  const [colC, setColC] = useState(props.colC);
+export default function Container3( {pcolA, pcolB, pcolC} ) {
+  const [colA, setColA] = useState( pcolA );
+  const [colB, setColB] = useState( pcolB );
+  const [colC, setColC] = useState( pcolC );
   const [colD, setColD] = useState(undefined);
   const [active, setActive] = useState( {} );
   const data = colC !== undefined ? ( levelsData.alldata[colA].data[colB].data || [] ) : [];
@@ -13,13 +13,13 @@ export default function Container3(props) {
   const { setPathC } = useContext( DirContext );
 
   useEffect(() => {
-    setColA(props.colA)
-    setColB(props.colB)
-    setColC(props.colC)
+    setColA( pcolA )
+    setColB( pcolB )
+    setColC( pcolC )
     setPathC('');
     setColD(undefined)
     setActive( {} );
-  }, [props.colB])
+  }, [ pcolB ])
 const handleClick = (dataID, dataLVL, dataLAB) => {
       let getID = dataID
       let newLVL = Number(dataLVL) + 1
@@ -36,9 +36,9 @@ const handleClick = (dataID, dataLVL, dataLAB) => {
   return (
     <>
       {hasData && (
-        <div className='container level' id={`level${props.colC}`}>
+        <div className='container level' id={ `level${ pcolC }` }>
           <div className='col-h'>
-            <h4> Level {props.colC}</h4>
+            <h4> Level { pcolC }</h4>
           </div>
           <ul>
             {data.map((item, index) => (
@@ -58,7 +58,7 @@ const handleClick = (dataID, dataLVL, dataLAB) => {
           <h1>colC - 3: {colC}</h1> */}
         </div>
       )}
-      <Column4 colA={colA} colB={colB} colC={colC} colD={colD} />
+      <Column4 pcolA={colA} pcolB={colB} pcolC={colC} pcolD={colD} />
     </>
   );
 }

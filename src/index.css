@@ -58,10 +58,10 @@ ul {
   flex-direction: column;
   gap: 2px;
   list-style-type: none;
+  margin: 10px 0px
 }
 
 li {
-  font-family: Arial, Helvetica, sans-serif;
   color: white;
 }
 
@@ -86,26 +86,35 @@ li:hover {
   background: #96969628;
 }
 
- .active {
+.active {
   background-image: linear-gradient(45deg, #23a6d510, #23d5ab80);
+  background-size: 200% 200%;
+  -webkit-animation: gradient 5s ease infinite;
+  animation: gradient 5s linear infinite;
+}
 
-  animation: gradient 2s linear infinite;
+@-webkit-keyframes gradient {
+	0% {
+		background-position: 0% 100%;
+	}
+	50% {
+		background-position: 100% 200%;
+	}
+	100% {
+		background-position: 200% 300%;
+	}
 }
 
 @keyframes gradient {
-  to {
-    background-position:25vw;
-  }
-}
-
-.follow{
-  margin-top: 40px;
-}
-
-.follow a{
-  color: black;
-  padding: 8px 16px;
-  text-decoration: none;
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 /* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ ROOT ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
@@ -113,9 +122,6 @@ li:hover {
   --background: #242424;
   --black-color: rgb(32, 32, 32);
   --white-color: rgb(233, 233, 233);
-
   --border: 10px;
-
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
-

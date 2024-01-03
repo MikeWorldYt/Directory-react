@@ -4,7 +4,7 @@ import './styles/Components.css'
 export default function Explorer() {
   return (
     <section id='explorer'>
-      <Column colA='1' />
+      <Column />
     </section>
   )
 }

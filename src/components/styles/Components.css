@@ -1,4 +1,4 @@
-#head, #explorer {
+    #head, #explorer {
     margin: 0 10px;
     display: flex;
 }
@@ -6,7 +6,7 @@
 .container {
     width: 100%;
     margin: 0rem 5px 10px;
-    padding: 5px 0px;
+    padding: 8px 0px;
     border-radius: var(--border);
     background: linear-gradient(135deg, rgba(150, 150, 150, 0.274), rgba(255, 255, 255, 0));
     backdrop-filter: blur(10px);
@@ -18,7 +18,7 @@
 }
 
 .level {
-    max-width: 25%;
+    max-width: 24%;
 }
 
 .col-h {
@@ -44,7 +44,8 @@
 }
 
 .path {
-    color: rgb(255, 218, 149)
+    color: rgb(255, 218, 149);
+    margin: 0 17px ;
 }
 
 /* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ ROOT ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
