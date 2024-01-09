@@ -4,7 +4,15 @@
     border-radius: var(--border);
 }
 
-.window-bar {
+.icon {
+    height: 3.5vh;
+}
+
+.iconDiv {
+    height: 5vh;
+}
+
+.windowBar {
     padding: 5px 0px 5px 10px;
     border-radius: var(--border) var(--border) 0px 0px;
     background-color: #1b202b;
@@ -13,7 +21,15 @@
     justify-content: flex-start;
 }
 
-.window-toolbar {
+.windowBarTitle {
+    margin-left: 10px;
+    text-align: left;
+    font-size: 3vh;
+    font-weight: 600;
+
+}
+
+.windowToolbar {
     padding: 5px 0px 5px 10px;
     background-color: #1b202b;
     display: flex;
@@ -21,19 +37,16 @@
     justify-content: flex-start;
 }
 
-.window-icon {
-    height: 5vh;
-}
-
-.window-title {
+.windowToolbarText {
     margin-left: 10px;
     text-align: left;
     font-size: 3vh;
+    font-weight: 400;
 }
 
-/* .window-content {
-    
-} */
+.windowWorkspace {
+    padding: 0px;
+}
 
 .path {
     color: rgb(255, 218, 149);

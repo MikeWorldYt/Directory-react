@@ -42,7 +42,7 @@ export default function Container( ) {
                   id={item.id}
                   data-level={item.level}
                   >
-                <img className='window-icon'
+                <img className='icon'
                   src={  icon[item.ico] } />
                 {item.label}
                 </button>

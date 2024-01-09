@@ -48,7 +48,7 @@ const handleClick = (dataID, dataLVL, dataLAB) => {
                   id={item.id}
                   data-level={item.level}
                   >
-                  <img className='window-icon'
+                  <img className='icon'
                   src={  icon[item.ico] } />
                   {item.label}
                 </button>

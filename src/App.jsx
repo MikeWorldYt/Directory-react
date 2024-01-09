@@ -7,21 +7,21 @@ import icon from './assets/icons/icons.js';
 export default function App() {
   return (
     <>
-      <h1 >File Management by MikeWorldYt</h1>
+      <h2>File Management by MikeWorldYt</h2>
       <div className='window'>
-        <div className='window-bar'>
-          <img className='window-icon'
+        <div className='windowBar'>
+          <img className='icon'
             src={ icon.app } />
-          <h2 className='window-title'>File Explorer</h2>
+          <h4 className='windowBarTitle'>File Explorer</h4>
         </div>
-        <div className='window-toolbar'>
-          <img className='window-icon'
+        <div className='windowToolbar'>
+          <img className='icon'
             src={ icon.add } />
-          <h2 className='window-title'>New</h2>
-          <img className='window-icon'
+          <h2 className='windowToolbarText'>New</h2>
+          <img className='iconDiv'
             src={ icon.div } />
         </div>
-        <div className='window-content'>
+        <div className='windowWorkspace'>
           <Head />
           <Explorer />
         </div>
