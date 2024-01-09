@@ -7,6 +7,9 @@ import folderRed from './iconFolderRed.svg';
 import folderYellow from './iconFolderYellow.svg';
 import folderOrange from './iconFolderOrange.svg';
 import folderBrown from './iconFolderBrown.svg';
+import word from './iconWord.svg';
+import excel from './iconExcel.svg';
+import pdf from './iconPdf.svg';
 
 export default {
     'app' : iconApp,
@@ -17,5 +20,8 @@ export default {
     'fRed' : folderRed,
     'fYellow' : folderYellow,
     'fOrange' : folderOrange,
-    'fBrown' : folderBrown
+    'fBrown' : folderBrown,
+    'pdf' : pdf,
+    'word' : word,
+    'excel' : excel
 }
