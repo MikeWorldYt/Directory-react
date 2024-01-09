@@ -41,3 +41,12 @@
     border: 1px solid white;
     border-radius: var(--border);
 }
+
+/* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ ROOT ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
+:root {
+    --background: #242424;
+    --black-color: rgb(32, 32, 32);
+    --white-color: rgb(233, 233, 233);
+    --border: 10px;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  }
