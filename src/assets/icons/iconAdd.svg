@@ -4,12 +4,13 @@
 	 viewBox="0 0 128 128" style="enable-background:new 0 0 128 128;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;stroke:#BDBDC0;stroke-width:3;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#212E3A;stroke-width:3;stroke-miterlimit:10;}
 </style>
 <g>
 	<g>
 		<circle class="st0" cx="64.9" cy="64.5" r="51.3"/>
-		<line class="st0" x1="31.5" y1="64.5" x2="98.3" y2="64.5"/>
-		<line class="st0" x1="64.9" y1="31.1" x2="64.9" y2="97.9"/>
+		<line class="st1" x1="31.5" y1="64.5" x2="98.3" y2="64.5"/>
+		<line class="st1" x1="64.9" y1="31.1" x2="64.9" y2="97.9"/>
 	</g>
 </g>
 </svg>
