@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from 'react';
 import { DirContext } from '../context/directory'
 import levelsData from './data';
 import Column3 from './column3'
+import icon from '../assets/icons/icons.js';
 
 export default function Container2( {pcolA, pcolB, pcolC} ) { 
   const colA = pcolA;
@@ -46,7 +47,10 @@ const handleClick = (dataID, dataLVL, dataLAB) => {
                   onClick={() => handleClick(item.id, item.level, item.label)}
                   id={item.id}
                   data-level={item.level}
-                  >{item.label}
+                  >
+                  <img className='window-icon'
+                  src={  icon[item.ico] } />
+                  {item.label}
                 </button>
               </li>
             ))}
