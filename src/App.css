@@ -1,0 +1,43 @@
+.window {
+    margin: 0px 5px;
+    background-color: #191919;
+    border-radius: var(--border);
+}
+
+.window-bar {
+    padding: 5px 0px 5px 10px;
+    border-radius: var(--border) var(--border) 0px 0px;
+    background-color: #1b202b;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.window-toolbar {
+    padding: 5px 0px 5px 10px;
+    background-color: #1b202b;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.window-icon {
+    height: 5vh;
+}
+
+.window-title {
+    margin-left: 10px;
+    text-align: left;
+    font-size: 3vh;
+}
+
+/* .window-content {
+    
+} */
+
+.path {
+    color: rgb(255, 218, 149);
+    width: 100%;
+    border: 1px solid white;
+    border-radius: var(--border);
+}
