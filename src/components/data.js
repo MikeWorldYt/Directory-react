@@ -53,16 +53,16 @@ const levelsData = {
         {id: '445' , level: 3, label: 'Mobile Development'},
       ] },
       { id: '450' , level: 2, label: '90.Resources', ico:'fBrown', data: [ 
-        { id: '451' , level: 3, label: 'RSR_8Grd_schoolSchedule.pdf'},
+        { id: '451' , level: 3, label: 'RSR_8Grd_schoolSchedule.pdf', ico:'pdf'},
       ] },
       { id: '460' , level: 2, label: '97.Undefined', ico:'fBrown' },
       { id: '470' , level: 2, label: '98.Review', ico:'fBrown', data: [ 
-        { id: '471' , level: 3, label: 'GBH3-ipWEAA5lsf.jpg'},
-        { id: '462' , level: 3, label: 'IMG-20220217-WA0006.jpg'},
-        { id: '463' , level: 3, label: 'IMG-20220217-WA0007.jpg'},
-        { id: '464' , level: 3, label: 'IMG-20220217-WA0008.jpg'},
-        { id: '465' , level: 3, label: 'math-presentation.pdf'},
-        { id: '466' , level: 3, label: 'MrSmith-test.zip'},
+        { id: '471' , level: 3, label: 'GBH3-ipWEAA5lsf.jpg', ico:'jpg'},
+        { id: '462' , level: 3, label: 'IMG-20220217-WA0006.jpg', ico:'jpg'},
+        { id: '463' , level: 3, label: 'IMG-20220217-WA0007.jpg', ico:'jpg'},
+        { id: '464' , level: 3, label: 'IMG-20220217-WA0008.jpg', ico:'jpg'},
+        { id: '465' , level: 3, label: 'math-presentation.pdf', ico:'pdf'},
+        { id: '466' , level: 3, label: 'MrSmith-test.zip', ico:'zip'},
       ] },
     ] },
 
