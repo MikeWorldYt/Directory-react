@@ -43,7 +43,7 @@ export default function Container( ) {
                   data-level={item.level}
                   >
                 <img className='window-icon'
-                  src={ icon[item.ico] } />
+                  src={  icon[item.ico] } />
                 {item.label}
                 </button>
               </li>
