@@ -6,8 +6,7 @@ export default function Path( ) {
 
   return (
     <>
-      <h3 className='path'>Root:/{pathA}{pathB}{pathC}</h3>
-      <h3></h3>
+      <h4 className='path'>Root:/{pathA}{pathB}{pathC}</h4>
     </>
   )
 }
