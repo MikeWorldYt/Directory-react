@@ -10,6 +10,10 @@ import folderBrown from './iconFolderBrown.svg';
 import word from './iconWord.svg';
 import excel from './iconExcel.svg';
 import pdf from './iconPdf.svg';
+import jpg from './iconJpg.svg';
+import mp3 from './iconMp3.svg';
+import mp4 from './iconMp4.svg';
+import zip from './iconZip.svg';
 
 export default {
     'app' : iconApp,
@@ -21,7 +25,11 @@ export default {
     'fYellow' : folderYellow,
     'fOrange' : folderOrange,
     'fBrown' : folderBrown,
+    'jpg' : jpg,
+    'mp3' : mp3,
+    'mp4' : mp4,
     'pdf' : pdf,
+    'zip' : zip,
     'word' : word,
     'excel' : excel
 }
