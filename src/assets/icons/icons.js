@@ -12,10 +12,10 @@ export default {
     'app' : iconApp,
     'add' : iconAdd,
     'div' : iconDivider,
-    'folderEmerald' : folderEmerald,
-    'folderBlue' : folderBlue,
-    'folderRed' : folderRed,
-    'folderYellow' : folderYellow,
-    'folderOrange' : folderOrange,
-    'folderBrown' : folderBrown
+    'fEmerald' : folderEmerald,
+    'fBlue' : folderBlue,
+    'fRed' : folderRed,
+    'fYellow' : folderYellow,
+    'fOrange' : folderOrange,
+    'fBrown' : folderBrown
 }
