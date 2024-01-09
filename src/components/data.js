@@ -1,11 +1,11 @@
 // data.js
 const levelsData = {
   alldata: [
-    { id: '100' , level: 1, label: '100.Personal', data: [
+    { id: '100' , level: 1, label: '100.Personal', ico:'folderEmerald', data: [
       { id: '110' , level: 2, label: 'Documentation' }
     ] },
 
-    { id: '200' , level: 1, label: '200.Work', data: [
+    { id: '200' , level: 1, label: '200.Work', ico:'folderBlue', data: [
       { id: '210' , level: 2, label: 'Photography', data:[
         { id: '211' , level: 3, label: 'Travel Photography', data:[
           { id: '211_01' , level: 4, label: 'Japan'},
@@ -20,11 +20,11 @@ const levelsData = {
     },
     ] },
 
-    { id: '300' , level: 1, label: '300.Projects' , data: [
+    { id: '300' , level: 1, label: '300.Projects', ico:'folderRed', data: [
 
     ] },
 
-    { id: '400' , level: 1, label: '400.Academic', data: [
+    { id: '400' , level: 1, label: '400.Academic', ico:'folderYellow', data: [
       { id: '410' , level: 2, label: '01.Lenguage', data: [
         {id: '411' , level: 3, label: 'Grammar'},
       ] },
@@ -66,7 +66,7 @@ const levelsData = {
       ] },
     ] },
 
-    { id: '500' , level: 1, label: '500.Hobbies', data: [
+    { id: '500' , level: 1, label: '500.Hobbies', ico:'folderOrange', data: [
       { id: '510' , level: 2, label: '01.Games'},
       { id: '520' , level: 2, label: '02.Art'},
       { id: '530' , level: 2, label: '03.Podcast'},
@@ -75,15 +75,15 @@ const levelsData = {
       { id: '560' , level: 2, label: '90.Resources'},
     ] },
 
-    { id: '600' , level: 1, label: '900.Resources', data: [
+    { id: '600' , level: 1, label: '900.Resources', ico:'folderBrown', data: [
       { id: '610' , level: 2, label: 'test'}, 
     ] },
 
-    { id: '700' , level: 1, label: '998.Review', data: [
+    { id: '700' , level: 1, label: '998.Review', ico:'folderBrown', data: [
       { id: '710' , level: 2, label: 'test'}, 
     ] },
 
-    { id: '800' , level: 1, label: '999.Settings', data: [
+    { id: '800' , level: 1, label: '999.Settings', ico:'folderBrown', data: [
       { id: '810' , level: 2, label: 'test'}, 
     ] }
   ]
