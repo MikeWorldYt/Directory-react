@@ -90,6 +90,35 @@ button {
   align-items: center;
 }
 
+.tooltip {
+  position: relative;
+}
+
+.tooltip:hover .tooltiptext {
+  opacity: 0.95;
+  transition: opacity 0.3s 1.5s;
+}
+
+.tooltip .tooltiptext {
+  visibility: visible; /* Hidden by default */
+  overflow: visible;
+  width: auto;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  border: 1px solid #BDBDC0;
+  padding: 5px;
+  position: absolute;
+  z-index: 2;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s 0s;
+  font-size: 0.7rem;
+}
+
 li:hover {
   background: #96969628;
 }
