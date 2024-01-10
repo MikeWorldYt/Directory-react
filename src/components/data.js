@@ -2,8 +2,8 @@
 const levelsData = {
   alldata: [
     { id: '100' , level: 1, label: '100.Personal', ico:'fEmerald', data: [
-      { id: '110' , level: 2, ico:'fEmerald', label: '01.Identity', data: [
-        { id: '111' , level: 3, ico:'fEmerald', label: '01.Your Name', data: [
+      { id: '110' , level: 2, ico:'fEmerald', label: '01.Your Name', data: [
+        { id: '111' , level: 3, ico:'fEmerald', label: '01.Identidity Documents', data: [
           { id: '111_01' , level: 4, ico:'pdf', label: 'Bird Certificate.pdf'},
           { id: '111_02' , level: 4, ico:'pdf', label: 'ID Card.pdf'},
           { id: '111_03' , level: 4, ico:'pdf', label: 'Social Segurity Card.pdf'},
@@ -11,10 +11,25 @@ const levelsData = {
           { id: '111_05' , level: 4, ico:'pdf', label: 'Passport.pdf'},
           { id: '111_06' , level: 4, ico:'jpg', label: 'yourPhoto.jpg'},
         ] },
-        { id: '112' , level: 3, ico:'fEmerald', label: '02.Family Documents', data: [
+        { id: '112' , level: 3, ico:'fEmerald', label: '02.Health', data: [
+          
+        ]},
+        { id: '113' , level: 3, ico:'fEmerald', label: '03.Education', data: [
+          
+        ]},
+        { id: '114' , level: 3, ico:'fEmerald', label: '04.Finance', data: [
+          
+        ]},
+        { id: '115' , level: 3, ico:'fEmerald', label: '05.Legals', data: [
+          
+        ]},
+        { id: '116' , level: 3, ico:'fBrown', label: '98.Review', data: [
           
         ]}
-      ] }
+      ] },
+      { id: '120' , level: 2, ico:'fEmerald', label: '02.Family Documents', data: [
+        
+      ]}
     ] },
 
     { id: '200' , level: 1, label: '200.Work', ico:'fBlue', data: [
