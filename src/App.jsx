@@ -15,9 +15,11 @@ export default function App() {
           <h4 className='windowBarTitle'>File Explorer</h4>
         </div>
         <div className='windowToolbar'>
-          <img className='icon'
-            src={ icon.add } />
-          <h2 className='windowToolbarText'>New</h2>
+          <button>
+            <img className='icon'
+              src={ icon.add } />
+            <h2 className='windowToolbarText'>New</h2>
+          </button>
           <img className='iconDiv'
             src={ icon.div } />
         </div>
