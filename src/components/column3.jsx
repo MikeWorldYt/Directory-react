@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from 'react';
 import { DirContext } from '../context/directory'
 import levelsData from './data';
 import Column4 from './column4'
+import icon from '../assets/icons/icons.js';
 export default function Container3( {pcolA, pcolB, pcolC} ) {
   const [colA, setColA] = useState( pcolA );
   const [colB, setColB] = useState( pcolB );
@@ -43,11 +44,15 @@ const handleClick = (dataID, dataLVL, dataLAB) => {
           <ul>
             {data.map((item, index) => (
               <li key={index}>
-                <button className={`${ active[item.label] ? 'active' : '' }`}
+                <button className={`tooltip ${ active[item.label] ? 'active' : '' }`}
                   onClick={() => handleClick(item.id, item.level, item.label)}
                   id={item.id}
                   data-level={item.level}
-                  >{item.label}
+                  >
+                  <img className='icon'
+                  src={  icon[item.ico] } />
+                  {item.label}
+                  <span className='tooltiptext'> {item.label} </span>
                 </button>
               </li>
             ))}

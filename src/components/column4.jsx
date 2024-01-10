@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import levelsData from './data';
+import icon from '../assets/icons/icons.js';
 
 export default function Container4( {pcolA, pcolB, pcolC, pcolD} ) {
   const [colA, setColA] = useState( pcolA );
@@ -16,12 +17,10 @@ export default function Container4( {pcolA, pcolB, pcolC, pcolD} ) {
     setColD( pcolD )
   }, [ pcolC ])
 
-  const handleClick = (dataID, dataLVL, dataLAB) => {
-    let getID = dataID
-    
+  const handleClick = (dataLAB) => {
     console.log(`
     --------- click ---------
-    ID: ${getID}, LABEL: ${dataLAB} `);
+    LABEL: ${dataLAB} `);
   };
   return (
     <>
@@ -33,11 +32,15 @@ export default function Container4( {pcolA, pcolB, pcolC, pcolD} ) {
           <ul>
             {data.map((item, index) => (
               <li key={index}>
-                <button 
-                  onClick={() => handleClick(item.id, item.level, item.label)}
+                <button className='tooltip'
+                  onClick={() => handleClick(item.label)}
                   id={item.id}
                   data-level={item.level}
-                  >{item.label}
+                  >
+                  <img className='icon'
+                    src={  icon[item.ico] } />
+                  {item.label}
+                  <span className='tooltiptext'> {item.label} </span>
                 </button>
               </li>
             ))}

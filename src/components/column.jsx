@@ -2,6 +2,7 @@ import { useContext, useState } from 'react'
 import { DirContext } from '../context/directory'
 import levelsData from './data';
 import Column2 from './column2'
+import icon from '../assets/icons/icons.js';
 
 export default function Container( ) {
   const [colA, setColA] = useState(undefined);
@@ -40,7 +41,10 @@ export default function Container( ) {
                   onClick={() => handleClick(item.id, item.level, item.label) }
                   id={item.id}
                   data-level={item.level}
-                  >{item.label}
+                  >
+                <img className='icon'
+                  src={  icon[item.ico] } />
+                {item.label}
                 </button>
               </li>
             ))}

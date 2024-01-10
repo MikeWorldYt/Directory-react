@@ -1,0 +1,64 @@
+.window {
+    margin: 0px 5px;
+    background-color: #191919;
+    border-radius: var(--border);
+}
+
+.icon {
+    height: 3.5vh;
+}
+
+.iconDiv {
+    height: 5vh;
+}
+
+.windowBar {
+    padding: 5px 0px 5px 10px;
+    border-radius: var(--border) var(--border) 0px 0px;
+    background-color: #1b202b;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.windowBarTitle {
+    margin-left: 10px;
+    text-align: left;
+    font-size: 3vh;
+    font-weight: 600;
+
+}
+
+.windowToolbar {
+    padding: 5px 0px 5px 10px;
+    background-color: #1b202b;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.windowToolbarText {
+    text-align: left;
+    font-size: 3vh;
+    font-weight: 400;
+}
+
+.windowWorkspace {
+    padding: 0px;
+}
+
+.path {
+    color: rgb(255, 218, 149);
+    width: 100%;
+    border: 1px solid white;
+    border-radius: var(--border);
+}
+
+/* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ ROOT ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
+:root {
+    --background: #242424;
+    --black-color: rgb(32, 32, 32);
+    --white-color: rgb(233, 233, 233);
+    --border: 10px;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
