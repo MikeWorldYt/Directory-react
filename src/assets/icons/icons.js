@@ -9,11 +9,11 @@ import folderOrange from './iconFolderOrange.svg';
 import folderBrown from './iconFolderBrown.svg';
 import word from './iconWord.svg';
 import excel from './iconExcel.svg';
-import pdf from './iconPdf.svg';
-import jpg from './iconJpg.svg';
-import mp3 from './iconMp3.svg';
-import mp4 from './iconMp4.svg';
-import zip from './iconZip.svg';
+import pdf from './iconPDF.svg';
+import jpg from './iconJPG.svg';
+import mp3 from './iconMP3.svg';
+import mp4 from './iconMP4.svg';
+import zip from './iconZIP.svg';
 
 export default {
     'app' : iconApp,
