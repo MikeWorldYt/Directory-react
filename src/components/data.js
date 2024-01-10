@@ -1,39 +1,58 @@
 // data.js
 const levelsData = {
   alldata: [
-    { id: '100' , level: 1, label: '100.Personal', ico:'fEmerald', data: [
-      { id: '110' , level: 2, ico:'fEmerald', label: '01.Your Name', data: [
+    { id: '100' , level: 1, label: '100.Personal', ico:'fEmerald', data: [ //  █ PERSONAL █
+      { id: '110' , level: 2, ico:'fEmerald', label: '01.Your Name', data: [ // ▬ NAME ▬
         { id: '111' , level: 3, ico:'fEmerald', label: '01.Identidity Documents', data: [
-          { id: '111_01' , level: 4, ico:'pdf', label: 'Bird Certificate.pdf'},
-          { id: '111_02' , level: 4, ico:'pdf', label: 'ID Card.pdf'},
-          { id: '111_03' , level: 4, ico:'pdf', label: 'Social Segurity Card.pdf'},
-          { id: '111_04' , level: 4, ico:'pdf', label: 'drivers license.pdf'},
-          { id: '111_05' , level: 4, ico:'pdf', label: 'Passport.pdf'},
-          { id: '111_06' , level: 4, ico:'jpg', label: 'yourPhoto.jpg'},
+          { level: 4, ico:'pdf', label: 'Bird_Certificate.pdf'},
+          { level: 4, ico:'pdf', label: 'ID Card.pdf'},
+          { level: 4, ico:'pdf', label: 'Social_Segurity_Card.pdf'},
+          { level: 4, ico:'pdf', label: 'drivers license.pdf'},
+          { level: 4, ico:'pdf', label: 'Passport.pdf'},
+          { level: 4, ico:'jpg', label: 'yourPhoto.jpg'},
         ] },
         { id: '112' , level: 3, ico:'fEmerald', label: '02.Health', data: [
           
-        ]},
+        ] },
         { id: '113' , level: 3, ico:'fEmerald', label: '03.Education', data: [
-          
-        ]},
+          { level: 3, ico:'pdf', label: 'CRT_HighSchoolDiploma.pdf' },
+          { level: 3, ico:'pdf', label: 'CRT_testing_largadocumentName.pdf' },
+        ] },
         { id: '114' , level: 3, ico:'fEmerald', label: '04.Finance', data: [
           
-        ]},
+        ] },
         { id: '115' , level: 3, ico:'fEmerald', label: '05.Legals', data: [
           
-        ]},
+        ] },
         { id: '116' , level: 3, ico:'fBrown', label: '98.Review', data: [
           
-        ]}
+        ] }
       ] },
-      { id: '120' , level: 2, ico:'fEmerald', label: '02.Family Documents', data: [
+      { id: '120' , level: 2, ico:'fEmerald', label: '02.Family Documents', data: [ // ▬ FAMILY ▬
         
-      ]}
+      ] },
+      { id: '130' , level: 2, ico:'fEmerald', label: '03.Memories', data: [ // ▬ MEMORIES ▬
+        { id: '131' , level: 3, ico:'fEmerald', label: '01.Family', data: [
+          
+        ] },
+        { id: '132' , level: 3, ico:'fEmerald', label: '02.Friends', data: [
+          
+        ] },
+        { id: '133' , level: 3, ico:'fEmerald', label: '03.Work Meets', data: [
+          
+        ] }
+      ] },
+      { id: '140' , level: 2, ico:'fBrown', label: '97.Undefined', data: [ // ▬ 97 ▬
+        { level: 3, ico:'jpg', label: 'PHO_Lois_middleSchoolGraduation.jpg' }
+      ] },
+      { id: '150' , level: 2, ico:'fBrown', label: '98.Review', data: [ // ▬ 98 ▬
+        { level: 3, ico:'pdf', label: 'Divorce Decree.pdf' },
+        { level: 3, ico:'jpg', label: '0fT56ghI9bx.jpg' },
+      ] },
     ] },
 
-    { id: '200' , level: 1, label: '200.Work', ico:'fBlue', data: [
-      { id: '210' , level: 2, label: 'Photography', ico:'fBlue', data:[
+    { id: '200' , level: 1, label: '200.Work', ico:'fBlue', data: [ //  █ WORK █
+      { id: '210' , level: 2, label: 'Photography', ico:'fBlue', data:[ // ▬ ▬
         { id: '211' , level: 3, label: 'Travel Photography', data:[
           { id: '211_01' , level: 4, label: 'Japan'},
         ] },
@@ -47,11 +66,11 @@ const levelsData = {
     },
     ] },
 
-    { id: '300' , level: 1, label: '300.Projects', ico:'fRed', data: [
+    { id: '300' , level: 1, label: '300.Projects', ico:'fRed', data: [ //  █ PROJECTS █
 
     ] },
 
-    { id: '400' , level: 1, label: '400.Academic', ico:'fYellow', data: [
+    { id: '400' , level: 1, label: '400.Academic', ico:'fYellow', data: [ //  █ ACADEMIC █
       { id: '410' , level: 2, label: '01.Lenguage', ico:'fYellow', data: [
         {id: '411' , level: 3, label: 'Grammar'},
       ] },
@@ -93,7 +112,7 @@ const levelsData = {
       ] },
     ] },
 
-    { id: '500' , level: 1, label: '500.Hobbies', ico:'fOrange', data: [
+    { id: '500' , level: 1, label: '500.Hobbies', ico:'fOrange', data: [ //  █ HOBBIES █
       { id: '510' , level: 2, label: '01.Games', ico:'fOrange'},
       { id: '520' , level: 2, label: '02.Art', ico:'fOrange'},
       { id: '530' , level: 2, label: '03.Podcast', ico:'fOrange'},
@@ -102,15 +121,15 @@ const levelsData = {
       { id: '560' , level: 2, label: '90.Resources', ico:'fBrown', },
     ] },
 
-    { id: '600' , level: 1, label: '900.Resources', ico:'fBrown', data: [
+    { id: '600' , level: 1, label: '900.Resources', ico:'fBrown', data: [ //  █ RESOURCES █
       { id: '610' , level: 2, label: 'test', ico:'fBrown'}, 
     ] },
 
-    { id: '700' , level: 1, label: '998.Review', ico:'fBrown', data: [
+    { id: '700' , level: 1, label: '998.Review', ico:'fBrown', data: [ //  █ REVIEW █
       { id: '710' , level: 2, label: 'test', ico:'fBrown'}, 
     ] },
 
-    { id: '800' , level: 1, label: '999.Settings', ico:'fBrown', data: [
+    { id: '800' , level: 1, label: '999.Settings', ico:'fBrown', data: [ //  █ SETTINGS █
       { id: '810' , level: 2, label: '01.Wallpapers', ico:'fBrown'},
       { id: '820' , level: 2, label: '02.Icons', ico:'fBrown'},
     ] }
