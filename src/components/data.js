@@ -16,7 +16,7 @@ const levelsData = {
         ] },
         { id: '113' , level: 3, ico:'fEmerald', label: '03.Education', data: [
           { level: 3, ico:'pdf', label: 'CRT_HighSchoolDiploma.pdf' },
-          { level: 3, ico:'pdf', label: 'CRT_testing_largadocumentName.pdf' },
+          { level: 3, ico:'pdf', label: 'CRT_testing_largadocumentNamelargoLarge.pdf' },
         ] },
         { id: '114' , level: 3, ico:'fEmerald', label: '04.Finance', data: [
           
