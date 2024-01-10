@@ -44,7 +44,7 @@ const handleClick = (dataID, dataLVL, dataLAB) => {
           <ul>
             {data.map((item, index) => (
               <li key={index}>
-                <button className={`tooltip ${ active[item.label] ? 'active' : '' }`}
+                <button title={item.label} className={`tooltip ${ active[item.label] ? 'active' : '' }`}
                   onClick={() => handleClick(item.id, item.level, item.label)}
                   id={item.id}
                   data-level={item.level}
@@ -52,7 +52,6 @@ const handleClick = (dataID, dataLVL, dataLAB) => {
                   <img className='icon'
                   src={  icon[item.ico] } />
                   {item.label}
-                  <span className='tooltiptext'> {item.label} </span>
                 </button>
               </li>
             ))}

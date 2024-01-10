@@ -37,7 +37,7 @@ export default function Container( ) {
           <ul>
             {data.map((item, index) => (
               <li key={index}>
-                <button className={`${ active[item.label] ? 'active' : '' }`} 
+                <button title={item.label} className={`${ active[item.label] ? 'active' : '' }`} 
                   onClick={() => handleClick(item.id, item.level, item.label) }
                   id={item.id}
                   data-level={item.level}
