@@ -22,6 +22,30 @@ export default function App() {
           </button>
           <img className='iconDiv'
             src={ icon.div } />
+          <button>
+            <img className='icon'
+              src={ icon.info } />
+          </button>
+          <button>
+            <img className='icon'
+              src={ icon.download } />
+          </button>
+          <img className='iconDiv'
+            src={ icon.div } />
+          <button>
+            <img className='icon'
+              src={ icon.sort } />
+            <h2 className='windowToolbarText'>Sort</h2>
+            <img className='iconSmall'
+              src={ icon.chDown } />
+          </button>
+          <button>
+            <img className='icon'
+              src={ icon.cols } />
+            <h2 className='windowToolbarText'>View</h2>
+            <img className='iconSmall'
+              src={ icon.chDown } />
+          </button>
         </div>
         <div className='windowWorkspace'>
           <Head />
