@@ -84,10 +84,13 @@ button {
   color: white;
   background: #00515100 ;
   border: 0;
-  width: 100%;
   display: flex;
   gap: 5px;
   align-items: center;
+}
+
+li button {
+  width: 100%;
 }
 
 .tooltip {
