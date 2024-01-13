@@ -1,6 +1,6 @@
 import './styles/App.css'
 import './styles/main.css'
-import WinPrototype from './components/app/windowPrototype.jsx';
+import WinPrototype from './components/app/winPrototype.jsx';
 // import Markdown from 'react-markdown'
 // const testing = `
 // # Header Test
