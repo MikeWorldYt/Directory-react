@@ -1,10 +1,16 @@
+import { useContext } from 'react';
+import { DirContext } from '../../context/directory';
 import icon from '../../assets/icons/icons.js';
 
-const modalNew = () => {
-  console.log('click');
-}
 
-export default function windowToolbar() {
+
+export default function WindowToolbar() {
+  const { setIsModalOpen } = useContext( DirContext );
+  const modalNew = () => {
+    setIsModalOpen(true);
+    console.log('click');
+  }
+
   return (
     <div className='windowToolbar'>
     <button onClick={()=> modalNew()}>
