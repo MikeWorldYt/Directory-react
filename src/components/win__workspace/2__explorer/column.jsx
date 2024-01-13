@@ -18,7 +18,7 @@ export default function Container( ) {
       let getID = dataID
       let newLVL = Number(dataLVL) + 1
       setColA(Number(getID[0])-1)
-      setPathA(`${dataLAB}/`);
+      setPathA(`${dataLAB}`);
       setColB(newLVL)
       setActive( { [dataLAB]: true } );
     

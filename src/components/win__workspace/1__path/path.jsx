@@ -9,14 +9,18 @@ const Chevron = (
 
 export default function Head() {
   const { pathA, pathB, pathC } = useContext( DirContext );
+
+  const dirA = pathA === '' ? '' : (Chevron);
+  const dirB = pathB === '' ? '' : (Chevron);
+  const dirC = pathC === '' ? '' : (Chevron);
   return (
     <section id='head'>
       <div className='container'>
         <h4 className='path'>Root
         {Chevron}
-        {pathA}
-        {pathB}
-        {pathC}
+        {pathA}{dirA}
+        {pathB}{dirB}
+        {pathC}{dirC}
         </h4>
       </div>
     </section>

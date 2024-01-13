@@ -27,7 +27,7 @@ const handleClick = (dataID, dataLVL, dataLAB) => {
       setColC(Number(getID[2])-1)
       setColD(newLVL)
       setActive( { [dataLAB]: true } );
-      setPathC(`${dataLAB}/`);
+      setPathC(`${dataLAB}`);
     
       console.log(`
       --------- click ---------
