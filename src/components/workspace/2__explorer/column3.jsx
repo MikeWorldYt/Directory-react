@@ -1,8 +1,8 @@
 import { useContext, useEffect, useState } from 'react';
-import { DirContext } from '../context/directory'
-import levelsData from './data';
-import Column4 from './column4'
-import icon from '../assets/icons/icons.js';
+import { DirContext } from '../../../context/directory.jsx'
+import levelsData from '../../../data/data.js';
+import Column4 from './column4.jsx'
+import icon from '../../../assets/icons/icons.js';
 export default function Container3( {pcolA, pcolB, pcolC} ) {
   const [colA, setColA] = useState( pcolA );
   const [colB, setColB] = useState( pcolB );

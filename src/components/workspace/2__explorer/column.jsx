@@ -1,8 +1,8 @@
 import { useContext, useState } from 'react'
-import { DirContext } from '../context/directory'
-import levelsData from './data';
-import Column2 from './column2'
-import icon from '../assets/icons/icons.js';
+import { DirContext } from '../../../context/directory.jsx'
+import levelsData from '../../../data/data.js';
+import Column2 from './column2.jsx'
+import icon from '../../../assets/icons/icons.js';
 
 export default function Container( ) {
   const [colA, setColA] = useState(undefined);

@@ -10,7 +10,7 @@ html {
 
 body {
   width: 100%;
-  background-image: url("./assets/images/BKG_Flat_modernArchitectureWave.jpg");
+  background-image: url("../assets/images/BKG_Flat_modernArchitectureWave.jpg");
   background-size: cover; 
   background-repeat: no-repeat;
   background-position: center center;

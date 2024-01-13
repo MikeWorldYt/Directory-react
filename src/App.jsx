@@ -1,7 +1,7 @@
-import './App.css'
-import './main.css'
-import Head from './components/head.jsx'
-import Explorer from './components/explorer.jsx'
+import './styles/App.css'
+import './styles/main.css'
+import Head from './components/workspace/1__path/head.jsx'
+import Explorer from './components/workspace/2__explorer/explorer.jsx'
 import icon from './assets/icons/icons.js';
 
 // import Markdown from 'react-markdown'

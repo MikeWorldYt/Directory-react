@@ -1,5 +1,5 @@
 import Path from './path'
-import './styles/Components.css'
+import '../../styles/Components.css'
 
 export default function Head() {
   return (

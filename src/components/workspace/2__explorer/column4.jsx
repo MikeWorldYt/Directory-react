@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import levelsData from './data';
-import icon from '../assets/icons/icons.js';
+import levelsData from '../../../data/data.js';
+import icon from '../../../assets/icons/icons.js';
 
 export default function Container4( {pcolA, pcolB, pcolC, pcolD} ) {
   const [colA, setColA] = useState( pcolA );
