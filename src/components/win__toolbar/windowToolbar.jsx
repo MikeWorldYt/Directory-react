@@ -1,9 +1,13 @@
 import icon from '../../assets/icons/icons.js';
 
+const modalNew = () => {
+  console.log('click');
+}
+
 export default function windowToolbar() {
   return (
     <div className='windowToolbar'>
-    <button>
+    <button onClick={()=> modalNew()}>
       <img className='icon'
         src={ icon.add } />
       <h2 className='windowToolbarText'>New</h2>
