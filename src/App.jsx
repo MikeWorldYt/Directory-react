@@ -1,8 +1,15 @@
 import './App.css'
+import './main.css'
 import Head from './components/head.jsx'
 import Explorer from './components/explorer.jsx'
-import './index.css'
 import icon from './assets/icons/icons.js';
+
+// import Markdown from 'react-markdown'
+// const testing = `
+// # Header Test
+// - text
+// > text
+// `
 
 export default function App() {
   return (
@@ -52,6 +59,9 @@ export default function App() {
           <Explorer />
         </div>
       </div>
+      {/* <Markdown>
+        {testing}
+      </Markdown> */}
 
     </>
   )
