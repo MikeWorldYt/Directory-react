@@ -39,8 +39,6 @@ export default function Container( ) {
               <li key={index}>
                 <button title={item.label} className={`${ active[item.label] ? 'active' : '' }`} 
                   onClick={() => handleClick(item.id, item.level, item.label) }
-                  id={item.id}
-                  data-level={item.level}
                   >
                 <img className='icon'
                   src={  icon[item.ico] } />
