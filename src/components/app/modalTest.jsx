@@ -4,8 +4,13 @@ export default function modalTest({ isOpen, closeModal }) {
 
   return (
     <div className='modal'>
-      <p>modalTest</p>
-      <button onClick={closeModal}>X</button>
+      <div className='popup'>
+        <button onClick={closeModal}>X</button>
+        <h2>WeSorry</h2>
+        <h4>This function has been disabled,<br></br>
+        because its only a demo prototype for you to create your file manager.
+        </h4>
+      </div>
     </div>
   )
 }
