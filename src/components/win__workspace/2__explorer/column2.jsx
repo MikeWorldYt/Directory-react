@@ -23,7 +23,7 @@ export default function Container2( {pcolA, pcolB, pcolC} ) {
 const handleClick = (dataID, dataLVL, dataLAB) => {
       let getID = dataID
       let newLVL = Number(dataLVL) + 1
-      setColB(Number(getID[1])-1)
+      setColB(Number(`${getID[2]}${getID[3]}`)-1);
       setColC(newLVL)
       setActive( { [dataLAB]: true } );
       setPathB(`${dataLAB}`);
