@@ -10,7 +10,7 @@ html {
 
 body {
   width: 100%;
-  background-image: url("./assets/images/BKG_Flat_modernArchitectureWave.jpg");
+  background-image: url("../assets/images/BKG_Flat_modernArchitectureWave.jpg");
   background-size: cover; 
   background-repeat: no-repeat;
   background-position: center center;
@@ -84,10 +84,13 @@ button {
   color: white;
   background: #00515100 ;
   border: 0;
-  width: 100%;
   display: flex;
   gap: 5px;
   align-items: center;
+}
+
+li button {
+  width: 100%;
 }
 
 .tooltip {

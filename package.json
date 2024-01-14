@@ -1,5 +1,5 @@
 {
-  "homepage":"https://github.com/mikeworldyt/Directory-react.git",
+  "homepage": "https://github.com/mikeworldyt/Directory-react.git",
   "name": "proy1",
   "private": true,
   "version": "0.0.0",
@@ -22,6 +22,7 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.4",
+    "react-markdown": "^9.0.1",
     "vite": "^5.0.0"
   }
 }

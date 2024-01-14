@@ -1,8 +1,8 @@
 import { useContext, useState } from 'react'
-import { DirContext } from '../context/directory'
-import levelsData from './data';
-import Column2 from './column2'
-import icon from '../assets/icons/icons.js';
+import { DirContext } from '../../../context/directory.jsx'
+import levelsData from '../../../data/data.js';
+import Column2 from './column2.jsx'
+import icon from '../../../assets/icons/icons.js';
 
 export default function Container( ) {
   const [colA, setColA] = useState(undefined);
@@ -18,7 +18,7 @@ export default function Container( ) {
       let getID = dataID
       let newLVL = Number(dataLVL) + 1
       setColA(Number(getID[0])-1)
-      setPathA(`${dataLAB}/`);
+      setPathA(`${dataLAB}`);
       setColB(newLVL)
       setActive( { [dataLAB]: true } );
     
@@ -37,7 +37,7 @@ export default function Container( ) {
           <ul>
             {data.map((item, index) => (
               <li key={index}>
-                <button className={`${ active[item.label] ? 'active' : '' }`} 
+                <button title={item.label} className={`${ active[item.label] ? 'active' : '' }`} 
                   onClick={() => handleClick(item.id, item.level, item.label) }
                   id={item.id}
                   data-level={item.level}

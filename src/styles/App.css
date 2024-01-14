@@ -4,12 +4,16 @@
     border-radius: var(--border);
 }
 
+.iconDiv {
+    height: 5vh;
+}
+
 .icon {
     height: 3.5vh;
 }
 
-.iconDiv {
-    height: 5vh;
+.iconSmall {
+    height: 2vh;
 }
 
 .windowBar {
@@ -35,6 +39,10 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
+}
+
+.windowToolbar button {
+    margin: 0 5px ;
 }
 
 .windowToolbarText {

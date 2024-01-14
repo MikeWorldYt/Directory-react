@@ -1,34 +1,21 @@
-import './App.css'
-import Head from './components/head.jsx'
-import Explorer from './components/explorer.jsx'
-import './index.css'
-import icon from './assets/icons/icons.js';
+import './styles/App.css'
+import './styles/main.css'
+import WinPrototype from './components/app/winPrototype.jsx';
+// import Markdown from 'react-markdown'
+// const testing = `
+// # Header Test
+// - text
+// > text
+// `
 
 export default function App() {
   return (
     <>
       <h2>File Management by MikeWorldYt</h2>
-      <div className='window'>
-        <div className='windowBar'>
-          <img className='icon'
-            src={ icon.app } />
-          <h4 className='windowBarTitle'>File Explorer</h4>
-        </div>
-        <div className='windowToolbar'>
-          <button>
-            <img className='icon'
-              src={ icon.add } />
-            <h2 className='windowToolbarText'>New</h2>
-          </button>
-          <img className='iconDiv'
-            src={ icon.div } />
-        </div>
-        <div className='windowWorkspace'>
-          <Head />
-          <Explorer />
-        </div>
-      </div>
-
+      <WinPrototype />
+      {/* <Markdown>
+        {testing}
+      </Markdown> */}
     </>
   )
 }

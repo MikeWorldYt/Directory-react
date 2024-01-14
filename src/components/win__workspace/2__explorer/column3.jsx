@@ -1,32 +1,33 @@
 import { useContext, useEffect, useState } from 'react';
-import { DirContext } from '../context/directory'
-import levelsData from './data';
-import Column3 from './column3'
-import icon from '../assets/icons/icons.js';
-
-export default function Container2( {pcolA, pcolB, pcolC} ) { 
-  const colA = pcolA;
+import { DirContext } from '../../../context/directory.jsx'
+import levelsData from '../../../data/data.js';
+import Column4 from './column4.jsx'
+import icon from '../../../assets/icons/icons.js';
+export default function Container3( {pcolA, pcolB, pcolC} ) {
+  const [colA, setColA] = useState( pcolA );
   const [colB, setColB] = useState( pcolB );
-  const [colC, setColC] = useState( pcolC )
+  const [colC, setColC] = useState( pcolC );
+  const [colD, setColD] = useState(undefined);
   const [active, setActive] = useState( {} );
-  const data =  colB !== undefined ? (levelsData.alldata[colA]?.data || []) : [];
+  const data = colC !== undefined ? ( levelsData.alldata[colA].data[colB].data || [] ) : [];
   const hasData = data.length > 0;
-  const { setPathB } = useContext( DirContext );
+  const { setPathC } = useContext( DirContext );
 
   useEffect(() => {
+    setColA( pcolA )
     setColB( pcolB )
-    setPathB('');
-    setColC(undefined)
+    setColC( pcolC )
+    setPathC('');
+    setColD(undefined)
     setActive( {} );
-  }, [ pcolA ])
-
+  }, [ pcolB ])
 const handleClick = (dataID, dataLVL, dataLAB) => {
       let getID = dataID
       let newLVL = Number(dataLVL) + 1
-      setColB(Number(getID[1])-1)
-      setColC(newLVL)
+      setColC(Number(getID[2])-1)
+      setColD(newLVL)
       setActive( { [dataLAB]: true } );
-      setPathB(`${dataLAB}/`);
+      setPathC(`${dataLAB}`);
     
       console.log(`
       --------- click ---------
@@ -36,14 +37,14 @@ const handleClick = (dataID, dataLVL, dataLAB) => {
   return (
     <>
       {hasData && (
-        <div className='container level' id={ `level ${ pcolB }` }>
+        <div className='container level' id={ `level${ pcolC }` }>
           <div className='col-h'>
-            <h4> Level { pcolB } </h4>
+            <h4> Level { pcolC }</h4>
           </div>
           <ul>
             {data.map((item, index) => (
               <li key={index}>
-                <button className={`${ active[item.label] ? 'active' : '' }`}
+                <button title={item.label} className={`tooltip ${ active[item.label] ? 'active' : '' }`}
                   onClick={() => handleClick(item.id, item.level, item.label)}
                   id={item.id}
                   data-level={item.level}
@@ -60,8 +61,8 @@ const handleClick = (dataID, dataLVL, dataLAB) => {
           <h1>colB - 2: {colB}</h1>
           <h1>colC - 3: {colC}</h1> */}
         </div>
-      )} 
-      <Column3 pcolA={colA} pcolB={colB} pcolC={colC} />
+      )}
+      <Column4 pcolA={colA} pcolB={colB} pcolC={colC} pcolD={colD} />
     </>
   );
 }

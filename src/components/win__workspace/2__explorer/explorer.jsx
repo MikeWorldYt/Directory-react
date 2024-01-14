@@ -1,5 +1,5 @@
 import Column from './column'
-import './styles/Components.css'
+import '../../styles/Components.css'
 
 export default function Explorer() {
   return (

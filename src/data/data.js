@@ -52,18 +52,32 @@ const levelsData = {
     ] },
 
     { id: '200' , level: 1, label: '200.Work', ico:'fBlue', data: [ //  █ WORK █
-      { id: '210' , level: 2, label: 'Photography', ico:'fBlue', data:[ // ▬ ▬
-        { id: '211' , level: 3, label: 'Travel Photography', data:[
-          { id: '211_01' , level: 4, label: 'Japan'},
-        ] },
-        { id: '212' , level: 3, label: 'Nature Photography', data: [
-          { id: '212_01' , level: 4, label: 'Taiwan'},
+      { id: '210' , level: 2, label: '01.Develoment', ico:'fBlue', data:[ // ▬ ▬
+        { id: '211' , level: 3, label: '(Nothing for now)', data:[
         ] },
       ] },
-      { id: '220' , level: 2, label: 'Frontend', ico:'fBlue', data:[
-        { id: '221' , level: 3, label: 'React' },
-      ]
-    },
+      { id: '220' , level: 2, label: '02.Project Managment', ico:'fBlue', data:[ // ▬ ▬
+        { id: '221' , level: 3, label: '(Nothing for now)' },
+      ] },
+      { id: '230' , level: 2, label: '03.Product Design', ico:'fBlue', data:[ // ▬ ▬
+      ] },
+      { id: '240' , level: 2, label: '04.Content Managment', ico:'fBlue', data:[ // ▬ ▬
+      ] },
+      { id: '250' , level: 2, label: '05.Data Analysis', ico:'fBlue', data:[ // ▬ ▬
+      ] },
+      { id: '260' , level: 2, label: '06.Editing', ico:'fBlue', data:[ // ▬ ▬
+      ] },
+      { id: '270' , level: 2, label: '07.Marketing', ico:'fBlue', data:[ // ▬ ▬
+      ] },
+      { id: '280' , level: 2, label: '08.Logistics', ico:'fBlue', data:[ // ▬ ▬
+      ] },
+      { id: '290' , level: 2, label: '09.Education', ico:'fBlue', data:[ // ▬ ▬
+      ] },
+      { level: 2, label: '10.Financial Services', ico:'fBlue', data:[ // ▬ ▬
+      ] },
+      { level: 2, label: '11.Legal Services', ico:'fBlue', data:[ // ▬ ▬
+      ] },
+
     ] },
 
     { id: '300' , level: 1, label: '300.Projects', ico:'fRed', data: [ //  █ PROJECTS █

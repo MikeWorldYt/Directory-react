@@ -1,6 +1,12 @@
 import iconApp from './iconApp.svg';
 import iconAdd from './iconAdd.svg';
+import iconDownload from './iconDownload.svg';
+import iconInfo from './iconInfo.svg';
+import iconSort from './iconSort.svg';
 import iconDivider from './iconDivider.svg';
+import chevronDown from './iconChevronDown.svg';
+import chevronRight from './iconChevronRight.svg';
+import iconColumns from './iconColumns.svg';
 import folderEmerald from './iconFolderEmerald.svg';
 import folderBlue from './iconFolderBlue.svg';
 import folderRed from './iconFolderRed.svg';
@@ -18,7 +24,13 @@ import zip from './iconZIP.svg';
 export default {
     'app' : iconApp,
     'add' : iconAdd,
+    'download' : iconDownload,
+    'info' : iconInfo,
+    'sort' : iconSort,
     'div' : iconDivider,
+    'chDown' : chevronDown,
+    'chRight' : chevronRight,
+    'cols' : iconColumns,
     'fEmerald' : folderEmerald,
     'fBlue' : folderBlue,
     'fRed' : folderRed,
