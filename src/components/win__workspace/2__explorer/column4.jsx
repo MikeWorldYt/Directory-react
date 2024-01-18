@@ -6,15 +6,15 @@ export default function Container4( {pcolA, pcolB, pcolC, pcolD} ) {
   const [colA, setColA] = useState( pcolA );
   const [colB, setColB] = useState( pcolB );
   const [colC, setColC] = useState( pcolC );
-  const [colD, setColD] = useState( pcolD );
-  const data = colD !== undefined ? ( levelsData.alldata[colA].data[colB].data[colC].data || [] ) : []; // testing data
+  //const [colD, setColD] = useState( pcolD );
+  const data = colC !== undefined ? ( levelsData.alldata[colA].data[colB].data[colC].data || [] ) : []; // testing data
   const hasData = data.length > 0;
 
   useEffect(() => {
     setColA( pcolA )
     setColB( pcolB )
     setColC( pcolC )
-    setColD( pcolD )
+    //setColD( pcolD )
   }, [ pcolC ])
 
   const handleClick = (dataLAB) => {

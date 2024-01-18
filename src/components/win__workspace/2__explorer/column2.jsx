@@ -9,7 +9,7 @@ export default function Container2( {pcolA, pcolB, pcolC} ) {
   const [colB, setColB] = useState( pcolB );
   const [colC, setColC] = useState( pcolC )
   const [active, setActive] = useState( {} );
-  const data =  colB !== undefined ? (levelsData.alldata[colA]?.data || []) : [];
+  const data =  colA !== undefined ? (levelsData.alldata[colA].data || []) : [];
   const hasData = data.length > 0;
   const { setPathB } = useContext( DirContext );
 
@@ -22,9 +22,8 @@ export default function Container2( {pcolA, pcolB, pcolC} ) {
 
 const handleClick = (dataID, dataLVL, dataLAB) => {
       let getID = dataID
-      let newLVL = Number(dataLVL) + 1
+      //let newLVL = Number(dataLVL) + 1
       setColB(Number(`${getID[2]}${getID[3]}`)-1);
-      setColC(newLVL)
       setActive( { [dataLAB]: true } );
       setPathB(`${dataLAB}`);
     
@@ -36,9 +35,9 @@ const handleClick = (dataID, dataLVL, dataLAB) => {
   return (
     <>
       {hasData && (
-        <div className='container level' id={ `level ${ pcolB }` }>
+        <div className='container level' id={ `level 2` }>
           <div className='col-h'>
-            <h4> Level { pcolB } </h4>
+            <h4> Level 2 </h4>
           </div>
           <ul>
             {data.map((item, index) => (
