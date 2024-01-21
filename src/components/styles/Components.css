@@ -32,12 +32,6 @@
     padding: 2px 15px;
 }
 
-.path {
-    color: rgb(255, 218, 149);
-    padding: 0 6px ;
-    height: 1.4rem;
-}
-
 .modal {
     position: fixed;
     top: 0;
