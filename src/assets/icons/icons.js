@@ -42,6 +42,6 @@ export default {
     'mp4' : mp4,
     'pdf' : pdf,
     'zip' : zip,
-    'word' : word,
-    'excel' : excel
+    'docx' : word,
+    'xlsx' : excel
 }

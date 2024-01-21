@@ -60,6 +60,10 @@
     width: 100%;
     border: 1px solid white;
     border-radius: var(--border);
+    display: flex;
+    align-items: center;
+    height: 1.4rem;
+    padding: 0 0.5rem;
 }
 
 /* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ ROOT ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */

@@ -6,7 +6,7 @@ import icon from '../../../assets/icons/icons.js';
 
 export default function Container( ) {
   const [colA, setColA] = useState(undefined);
-  const [colB, setColB] = useState(undefined);
+  const colB = undefined;
   const colC = undefined;
   const [active, setActive] = useState( {} );
   const allData = 'alldata'
@@ -16,12 +16,10 @@ export default function Container( ) {
 
   const handleClick = (dataID, dataLVL, dataLAB) => {
       let getID = dataID
-      let newLVL = Number(dataLVL) + 1
+      //let newLVL = Number(dataLVL) + 1
       setColA(Number(getID[0])-1)
       setPathA(`${dataLAB}`);
-      setColB(newLVL)
       setActive( { [dataLAB]: true } );
-    
       console.log(`
       --------- click ---------
       ID: ${getID}, LABEL: ${dataLAB} `);
