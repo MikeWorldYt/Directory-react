@@ -1,7 +1,7 @@
 const levelsData = {
   alldata: [
     { id: '1_00' , level: 1, label: '100.Personal', ico:'fEmerald', data: [ //  █ PERSONAL █
-      { id: '1_01' , level: 2, ico:'fEmerald', label: '01.Your Name', data: [ // ▬ NAME ▬
+      { id: '1_01' , level: 2, ico:'fEmerald', label: '01.My Documents', data: [ // ▬ NAME ▬
         { id: '1_01_01' , level: 3, ico:'fEmerald', label: '01.Identidity Documents', data: [
           { level: 4, ico:'pdf', label: 'Bird_Certificate.pdf'},
           { level: 4, ico:'pdf', label: 'ID Card.pdf'},
@@ -66,21 +66,30 @@ const levelsData = {
           { level: 4, ico:'pdf', label: 'DOC_PS4Warranty.pdf'},
         ] },
         { id: '1_02_06' , level: 3, ico:'fEmerald', label: '06.Makeover Plan', data: [ 
-          { level: 4, ico:'word', label: 'DOC_renovationWhislist.docx'},
+          { level: 4, ico:'docx', label: 'DOC_renovationWhislist.docx'},
           { level: 4, ico:'pdf', label: 'DOC_costEstimateWood.pdf'},
           { level: 4, ico:'pdf', label: 'DOC_buildingPlans.pdf'},
           { level: 4, ico:'jpg', label: 'reference1.jpg'},
           { level: 4, ico:'jpg', label: 'reference2.jpg'},
-        ] }
+        ] },
+        { id: '1_02_07' , level: 3, ico:'fBrown', label: '98.Review', data: [
+          
+        ]}
       ] },
-      { id: '1_03' , level: 2, ico:'fEmerald', label: '03.Memories', data: [ // ▬ MEMORIES ▬
-        { id: '1_03_01' , level: 3, ico:'fEmerald', label: '01.Family', data: [
+      { id: '1_03' , level: 2, ico:'fEmerald', label: '03.Bussiness', data: [ // ▬ BUSINESS ▬
+        { label: ' This folder is empty' }
+      ] },
+      { id: '1_04' , level: 2, ico:'fEmerald', label: '04.Finance', data: [ // ▬ 97 ▬
+        { label: ' This folder is empty' }
+      ] },
+      { id: '1_05' , level: 2, ico:'fEmerald', label: '04.Memories', data: [ // ▬ MEMORIES ▬
+        { id: '1_05_01' , level: 3, ico:'fEmerald', label: '01.Family', data: [
           { label: ' This folder is empty' }
         ] },
-        { id: '1_03_02' , level: 3, ico:'fEmerald', label: '02.Friends', data: [
+        { id: '1_05_02' , level: 3, ico:'fEmerald', label: '02.Friends', data: [
           { label: ' This folder is empty' }
         ] },
-        { id: '1_03_03' , level: 3, ico:'fEmerald', label: '03.Work Meets', data: [
+        { id: '1_05_03' , level: 3, ico:'fEmerald', label: '03.Work Meets', data: [
           { label: ' This folder is empty' }
         ] }
       ] },
@@ -185,16 +194,16 @@ const levelsData = {
       ] },
       { id: '5_02' , level: 2, label: '02.Art', ico:'fOrange', data : [
         { label: ' This folder is empty' }
-      ]},
+      ] },
       { id: '5_03' , level: 2, label: '03.Podcast', ico:'fOrange', data : [
         { label: ' This folder is empty' }
-      ]},
+      ] },
       { id: '5_04' , level: 2, label: '04.Music', ico:'fOrange', data : [
         { label: ' This folder is empty' }
-      ]},
+      ] },
       { id: '5_05' , level: 2, label: '05.Recipes', ico:'fOrange', data : [
         { label: ' This folder is empty' }
-      ]},
+      ] },
       { id: '5_06' , level: 2, label: '90.Resources', ico:'fBrown', data : [
         { label: ' This folder is empty' }
       ] },
