@@ -1,3 +1,15 @@
+nav {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 10px;
+    padding: 0 5px 
+}
+
+nav img {
+    height: 1.5rem;
+}
+
 .window {
     margin: 0px 5px;
     background-color: #191919;
@@ -9,7 +21,7 @@
 }
 
 .icon {
-    height: 3.5vh;
+    height: 24px;
 }
 
 .iconSmall {
