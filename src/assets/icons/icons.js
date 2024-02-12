@@ -1,3 +1,7 @@
+import iconAnt from '../../../public/vite.svg'
+import iconSun from './iconSun.svg'
+import iconMoon from './iconMoon.svg'
+import iconGithub from './iconGitHub.svg'
 import iconApp from './iconApp.svg';
 import iconAdd from './iconAdd.svg';
 import iconDownload from './iconDownload.svg';
@@ -22,6 +26,10 @@ import mp4 from './iconMP4.svg';
 import zip from './iconZIP.svg';
 
 export default {
+    'ant' : iconAnt,
+    'sun' : iconSun,
+    'git' : iconGithub,
+    'moon' : iconMoon,
     'app' : iconApp,
     'add' : iconAdd,
     'download' : iconDownload,
