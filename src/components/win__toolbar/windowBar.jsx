@@ -6,7 +6,7 @@ export default function windowBar() {
       <div className='windowBar'>
         <img className='icon'
           src={ icon.app } />
-        <h4 className='windowBarTitle'>File Explorer</h4>
+        <h4 className='windowBarTitle'>File Explorer ( Demo )</h4>
       </div>
     </>
   )

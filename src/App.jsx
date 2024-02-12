@@ -1,6 +1,7 @@
 import './styles/App.css'
 import './styles/main.css'
 import WinPrototype from './components/app/winPrototype.jsx';
+import Nav from './components/app/nav.jsx'
 // import Markdown from 'react-markdown'
 // const testing = `
 // # Header Test
@@ -11,7 +12,7 @@ import WinPrototype from './components/app/winPrototype.jsx';
 export default function App() {
   return (
     <>
-      <h2>File Management by MikeWorldYt</h2>
+      <Nav />
       <WinPrototype />
       {/* <Markdown>
         {testing}
